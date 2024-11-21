@@ -14,7 +14,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.DesempenhodoAluno
+
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.EmblemasAlunos
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.InformacoesdoAluno
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.NomeFoto
@@ -76,7 +76,6 @@ fun TelaPerfil() {
             Spacer(modifier = Modifier.height(40.dp))
 
 
-            DesempenhodoAluno()
 
 
             Spacer(modifier = Modifier.height(60.dp))

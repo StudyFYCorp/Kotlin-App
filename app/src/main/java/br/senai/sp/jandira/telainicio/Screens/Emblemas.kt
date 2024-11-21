@@ -290,8 +290,7 @@ fun Emblemas() {
                     fontSize = 26.sp,
                     fontFamily = poppinsFontFamily,
                     fontWeight = FontWeight.Medium,
-                    fontWeight = FontWeight.Bold,
-                    fontFamily = poppinsFontFamily,
+
                     text = "Emblemas de mentor"
                 )
 
@@ -325,8 +324,7 @@ fun Emblemas() {
                                     .height(30.dp),
                                 fontFamily = poppinsFontFamily,
                                 fontWeight = FontWeight.Medium,
-                                fontWeight = FontWeight.Bold,
-                                fontFamily = poppinsFontFamily,
+                               
                                 text = "Nível 1"
                             )
                         }
@@ -379,6 +377,9 @@ fun Emblemas() {
         }
     }
 }
+
+
+
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable

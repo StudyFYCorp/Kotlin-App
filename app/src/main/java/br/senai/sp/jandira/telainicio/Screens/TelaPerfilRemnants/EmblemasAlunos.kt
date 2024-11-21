@@ -54,8 +54,6 @@ fun EmblemasAlunos(){
             Text(text = "Ver todos",
                 fontFamily = poppinsFontFamily,
                 fontWeight = FontWeight.Medium,
-                fontWeight = FontWeight.Bold,
-                fontFamily = poppinsFontFamily,
                 fontSize = 30.sp)
 
             Text(text = "Ver todos",
@@ -101,8 +99,6 @@ fun EmblemasAlunos(){
                                 .height(30.dp),
                             fontFamily = poppinsFontFamily,
                             fontWeight = FontWeight.Medium,
-                            fontWeight = FontWeight.Bold,
-                            fontFamily = poppinsFontFamily,
                             text = "Nível 1"
                         )
 
@@ -136,8 +132,6 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 
@@ -172,8 +166,6 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 
@@ -208,8 +200,6 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 
