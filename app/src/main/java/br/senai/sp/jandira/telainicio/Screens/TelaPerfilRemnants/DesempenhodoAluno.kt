@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun DesempenhodoAluno() {
@@ -37,7 +37,7 @@ fun DesempenhodoAluno() {
     ) {
         Text(
             text = "Desempenho",
-            fontFamily = Poppins,
+            fontFamily = poppinsFontFamily,
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
@@ -89,11 +89,11 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Rank recorde"
                             )
                             Text(text = "Ouro ||",
-                                fontFamily = Poppins,)
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
                 }
@@ -136,11 +136,11 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Pontos"
                             )
                             Text(text = "210",
-                                fontFamily = Poppins,)
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
                 }
@@ -184,11 +184,11 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Sem parar!"
                             )
                             Text(text = "14 dias",
-                                fontFamily = Poppins,)
+                                fontFamily = poppinsFontFamily,)
                         }
                         Box(
                             modifier = Modifier
@@ -231,11 +231,11 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Atividades feitas"
                             )
                             Text(text = "20",
-                                fontFamily = Poppins,)
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
                 }

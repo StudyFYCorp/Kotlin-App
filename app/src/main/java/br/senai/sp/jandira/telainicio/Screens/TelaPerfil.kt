@@ -19,7 +19,7 @@ import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.InformacoesdoAl
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.NomeFoto
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.RankdeAlunoMentor
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.RankdeAlunos
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun TelaPerfil() {
@@ -46,7 +46,7 @@ fun TelaPerfil() {
                 modifier = Modifier
                     .padding(top = 10.dp),
                 text = "Perfil",
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
                 fontSize = 20.sp
             )
             Row(

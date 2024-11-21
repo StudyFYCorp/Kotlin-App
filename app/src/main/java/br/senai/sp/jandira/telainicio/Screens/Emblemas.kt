@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun Emblemas() {
@@ -35,7 +35,7 @@ fun Emblemas() {
                     .padding(top = 10.dp),
                 fontWeight = FontWeight.Medium,
                 fontSize = 18.sp,
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
                 text = "Emblemas"
             )
 
@@ -45,7 +45,7 @@ fun Emblemas() {
                 modifier = Modifier.padding(start = 10.dp),
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold,
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
                 text = "Emblemas de aluno"
             )
 
@@ -82,7 +82,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -101,12 +101,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Engatinhando"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Realizou a primeira atividade da aplicação"
                                 )
 
@@ -155,7 +155,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -174,12 +174,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Subindo degraus"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Realizou xxx atividades"
                                 )
 
@@ -232,7 +232,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -251,12 +251,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Estudioso"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Acabou uma matéria"
                                 )
 
@@ -288,7 +288,7 @@ fun Emblemas() {
                     modifier = Modifier.padding(start = 10.dp),
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
-                    fontFamily = Poppins,
+                    fontFamily = poppinsFontFamily,
                     text = "Emblemas de mentor"
                 )
 
@@ -321,7 +321,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-                                fontFamily = Poppins,
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -340,12 +340,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Engatinhando"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-                                    fontFamily = Poppins,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Realizou a primeira atividade da aplicação"
                                 )
 

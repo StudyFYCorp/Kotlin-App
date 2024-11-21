@@ -27,7 +27,8 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
+
 
 @Composable
 fun NomeFoto(){
@@ -71,7 +72,7 @@ fun NomeFoto(){
                 ) {
                     Text(
                         text = "Silvia Santos",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold
                     )
@@ -85,7 +86,7 @@ fun NomeFoto(){
                 ) {
                     Text(
                         text = "Entrou em 2021",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 14.sp
                     )
                 }

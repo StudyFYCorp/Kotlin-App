@@ -21,7 +21,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
+
 
 @Composable
 fun InformacoesdoAluno(){
@@ -51,12 +52,12 @@ fun InformacoesdoAluno(){
                 ) {
                     Text(
                         text = "Estudando",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 20.sp
                     )
                     Text(
                         text = "Historia",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 15.sp
                     )
                 }
@@ -75,7 +76,7 @@ fun InformacoesdoAluno(){
             ) {
                 Text(
                     text = "Aluno/Mentor",
-                    fontFamily = Poppins,
+                    fontFamily = poppinsFontFamily,
                     fontSize = 18.sp
                 )
             }
@@ -97,12 +98,12 @@ fun InformacoesdoAluno(){
                 ) {
                     Text(
                         text = "Série",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 20.sp
                     )
                     Text(
                         text = "3º - fundamental 1",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 15.sp
                     )
                 }
@@ -120,7 +121,7 @@ fun InformacoesdoAluno(){
             ) {
                 Text(
                     text = "Ver grupo de mentoria",
-                    fontFamily = Poppins,
+                    fontFamily = poppinsFontFamily,
                     color = Color.Black,
                     fontSize = 12.sp
                 )
@@ -144,12 +145,12 @@ fun InformacoesdoAluno(){
                     Text(
                         text = "Assunto no momento",
                         fontWeight = FontWeight.Bold,
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 20.sp
                     )
                     Text(
                         text = "Segunda Guerra Mundial",
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 15.sp
                     )
                 }

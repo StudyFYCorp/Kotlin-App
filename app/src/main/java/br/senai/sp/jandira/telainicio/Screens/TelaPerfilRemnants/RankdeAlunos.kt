@@ -24,7 +24,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun RankdeAlunos(){
@@ -39,7 +39,7 @@ fun RankdeAlunos(){
             .fillMaxWidth()
         ) {
             Text(text = "Rank - Alunos",
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
                 fontWeight = FontWeight.Bold,
                 fontSize = 30.sp)
         }
@@ -64,7 +64,7 @@ fun RankdeAlunos(){
                 Text(modifier = Modifier
                     .align(Alignment.CenterHorizontally),
                     text = "Bronze ||",
-                    fontFamily = Poppins,
+                    fontFamily = poppinsFontFamily,
                     fontSize = 20.sp,
                     color = Color(0xffA96224),
                     fontWeight = FontWeight.Bold
