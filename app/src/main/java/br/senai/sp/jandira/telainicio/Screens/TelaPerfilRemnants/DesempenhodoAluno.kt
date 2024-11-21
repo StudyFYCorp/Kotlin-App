@@ -25,7 +25,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
 
 @Composable
 fun DesempenhodoAluno() {
@@ -37,7 +36,6 @@ fun DesempenhodoAluno() {
     ) {
         Text(
             text = "Desempenho",
-            fontFamily = Poppins,
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
@@ -75,7 +73,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 5.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.medalhadeouro),
+                                painter = painterResource(id = R.drawable.primeirolugar),
                                 contentDescription = "Medalha de ouro do rank"
                             )
                         }
@@ -89,11 +87,9 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
-                                fontFamily = Poppins,
                                 text = "Rank recorde"
                             )
-                            Text(text = "Ouro ||",
-                                fontFamily = Poppins,)
+                            Text(text = "Ouro ||")
                         }
                     }
                 }
@@ -136,11 +132,9 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
-                                fontFamily = Poppins,
                                 text = "Pontos"
                             )
-                            Text(text = "210",
-                                fontFamily = Poppins,)
+                            Text(text = "210")
                         }
                     }
                 }
@@ -171,7 +165,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 10.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.calendario),
+                                painter = painterResource(id = R.drawable.calabreso2),
                                 contentDescription = "Sem parar"
                             )
                         }
@@ -184,11 +178,10 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
-                                fontFamily = Poppins,
+
                                 text = "Sem parar!"
                             )
-                            Text(text = "14 dias",
-                                fontFamily = Poppins,)
+                            Text(text = "14 dias")
                         }
                         Box(
                             modifier = Modifier
@@ -219,7 +212,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 5.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.correto),
+                                painter = painterResource(id = R.drawable.anterior),
                                 contentDescription = "Atividades feitas"
                             )
                         }
@@ -231,11 +224,10 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
-                                fontFamily = Poppins,
+
                                 text = "Atividades feitas"
                             )
-                            Text(text = "20",
-                                fontFamily = Poppins,)
+                            Text(text = "20")
                         }
                     }
                 }

@@ -31,7 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun EmblemasAlunos(){
@@ -50,13 +50,13 @@ fun EmblemasAlunos(){
             .fillMaxWidth()
         ) {
             Text(text = "Emblemas",
-                fontWeight = FontWeight.Bold,
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Medium,
                 fontSize = 30.sp)
 
             Text(text = "Ver todos",
-                fontWeight = FontWeight.Light,
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Medium,
                 fontSize = 23.sp)
         }
 
@@ -87,7 +87,7 @@ fun EmblemasAlunos(){
                                 .padding(top = 10.dp)
                                 .size(60.dp)
                                 .align(Alignment.TopCenter),
-                            painter = painterResource(id = R.drawable.medalha),
+                            painter = painterResource(id = R.drawable.primeirolugar),
                             contentDescription = "Medalha"
                         )
                         Text(
@@ -95,8 +95,8 @@ fun EmblemasAlunos(){
                             modifier = Modifier
                                 .align(Alignment.BottomCenter)
                                 .height(30.dp),
-                            fontWeight = FontWeight.Bold,
-                            fontFamily = Poppins,
+                            fontFamily = poppinsFontFamily,
+                            fontWeight = FontWeight.Medium,
                             text = "Nível 1"
                         )
 
@@ -128,8 +128,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         text = "Nível 1"
                     )
 
@@ -162,8 +162,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         text = "Nível 1"
                     )
 
@@ -188,7 +188,7 @@ fun EmblemasAlunos(){
                             .padding(top = 10.dp)
                             .size(60.dp)
                             .align(Alignment.TopCenter),
-                        painter = painterResource(id = R.drawable.medalha),
+                        painter = painterResource(id = R.drawable.primeirolugar),
                         contentDescription = "Medalha"
                     )
                     Text(
@@ -196,8 +196,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
-                        fontWeight = FontWeight.Bold,
-                        fontFamily = Poppins,
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         text = "Nível 1"
                     )
 

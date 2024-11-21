@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -19,7 +20,7 @@ import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.InformacoesdoAl
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.NomeFoto
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.RankdeAlunoMentor
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants.RankdeAlunos
-import br.senai.sp.jandira.telainicio.ui.theme.Poppins
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun TelaPerfil() {
@@ -46,7 +47,8 @@ fun TelaPerfil() {
                 modifier = Modifier
                     .padding(top = 10.dp),
                 text = "Perfil",
-                fontFamily = Poppins,
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Medium,
                 fontSize = 20.sp
             )
             Row(
