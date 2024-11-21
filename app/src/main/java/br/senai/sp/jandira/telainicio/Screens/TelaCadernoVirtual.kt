@@ -1,5 +1,7 @@
 package br.senai.sp.jandira.telainicio.Screens
 
+import CadernoVirtualResponse
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -34,13 +36,39 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import br.senai.sp.jandira.rickandmorty.service.RetrofitFactory
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.model.Materia
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CadernoVirtual(modifier: Modifier = Modifier) {
 
     var text by remember { mutableStateOf("") }
+
+    val idAluno = 1 // ID do aluno ou caderno virtual que você deseja buscar
+    val chamarNotas = RetrofitFactory()
+        .getCadernoVirtualAluno().getCadernoVirtualByIdAluno(idAluno)
+
+    chamarNotas.enqueue(object : Callback<CadernoVirtualResponse> {
+        override fun onResponse(call: Call<CadernoVirtualResponse>, response: Response<CadernoVirtualResponse>) {
+            if (response.isSuccessful) {
+                val cadernoResponse = response.body()
+                val cadernos = cadernoResponse?.data // Aqui você acessa a lista de cadernos
+                Log.d("CadernoVirtual", "Cadernos: $cadernos")
+            } else {
+                Log.d("CadernoVirtual", "Erro na resposta")
+            }
+        }
+
+        override fun onFailure(call: Call<CadernoVirtualResponse>, t: Throwable) {
+            Log.d("CadernoVirtual", "Falha na requisição: ${t.message}")
+        }
+    })
+
 
 
     Column {
