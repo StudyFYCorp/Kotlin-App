@@ -31,6 +31,7 @@ import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
 import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
+
 @Composable
 fun RankdeAlunoMentor() {
 
@@ -55,7 +56,9 @@ fun RankdeAlunoMentor() {
                 Text(
                     text = "Rank - mentor",
                     fontFamily = poppinsFontFamily,
+
                     fontWeight = FontWeight.Bold,
+
                     fontSize = 30.sp,
 
                 )
@@ -116,7 +119,9 @@ fun RankdeAlunoMentor() {
                         Text(
                             text = "(130 avaliações)",
                             fontFamily = poppinsFontFamily,
+
                             fontWeight = FontWeight.Medium,
+
                             fontSize = 12.sp,
                             modifier = Modifier.align(Alignment.CenterHorizontally)
                         )

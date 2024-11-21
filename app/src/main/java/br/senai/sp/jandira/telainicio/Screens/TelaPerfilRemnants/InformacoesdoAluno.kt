@@ -53,13 +53,17 @@ fun InformacoesdoAluno(){
                     Text(
                         text = "Estudando",
                         fontFamily = poppinsFontFamily,
+
                         fontWeight = FontWeight.Medium,
+
                         fontSize = 20.sp
                     )
                     Text(
                         text = "Historia",
                         fontFamily = poppinsFontFamily,
+
                         fontWeight = FontWeight.Medium,
+
                         fontSize = 15.sp
                     )
                 }
@@ -79,7 +83,9 @@ fun InformacoesdoAluno(){
                 Text(
                     text = "Aluno/Mentor",
                     fontFamily = poppinsFontFamily,
+
                     fontWeight = FontWeight.Medium,
+
                     fontSize = 18.sp
                 )
             }
@@ -102,13 +108,16 @@ fun InformacoesdoAluno(){
                     Text(
                         text = "Série",
                         fontFamily = poppinsFontFamily,
+
                         fontWeight = FontWeight.Medium,
+
                         fontSize = 20.sp
                     )
                     Text(
                         text = "3º - fundamental 1",
                         fontFamily = poppinsFontFamily,
-                        fontWeight = FontWeight.Medium,
+                  fontWeight = FontWeight.Medium,
+
                         fontSize = 15.sp
                     )
                 }
@@ -127,7 +136,9 @@ fun InformacoesdoAluno(){
                 Text(
                     text = "Ver grupo de mentoria",
                     fontFamily = poppinsFontFamily,
+
                     fontWeight = FontWeight.Medium,
+
                     color = Color.Black,
                     fontSize = 12.sp
                 )

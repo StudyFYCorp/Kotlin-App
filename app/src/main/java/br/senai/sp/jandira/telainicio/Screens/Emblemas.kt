@@ -20,7 +20,6 @@ import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
-
 @Composable
 fun Emblemas() {
     Column(modifier = Modifier.fillMaxSize()) {
@@ -36,7 +35,7 @@ fun Emblemas() {
                     .padding(top = 10.dp),
                 fontWeight = FontWeight.Medium,
                 fontSize = 18.sp,
-
+                fontFamily = poppinsFontFamily,
                 text = "Emblemas"
             )
 
@@ -46,7 +45,7 @@ fun Emblemas() {
                 modifier = Modifier.padding(start = 10.dp),
                 fontSize = 26.sp,
                 fontWeight = FontWeight.Bold,
-
+                fontFamily = poppinsFontFamily,
                 text = "Emblemas de aluno"
             )
 
@@ -83,7 +82,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -102,12 +101,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-
+                                    fontFamily = poppinsFontFamily,
                                     text = "Engatinhando"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-
+                                    fontFamily = poppinsFontFamily,
                                     text = "Realizou a primeira atividade da aplicação"
                                 )
 
@@ -156,7 +155,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -175,12 +174,12 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-
+                                    fontFamily = poppinsFontFamily,
                                     text = "Subindo degraus"
                                 )
                                 Text(
                                     fontSize = 12.sp,
-
+                                    fontFamily = poppinsFontFamily,
                                     text = "Realizou xxx atividades"
                                 )
 
@@ -233,7 +232,7 @@ fun Emblemas() {
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
                                 fontWeight = FontWeight.Bold,
-
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }
@@ -252,7 +251,7 @@ fun Emblemas() {
                                 Text(
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
-
+                                    fontFamily = poppinsFontFamily,
                                     text = "Estudioso"
                                 )
                                 Text(
@@ -289,9 +288,10 @@ fun Emblemas() {
                 Text(
                     modifier = Modifier.padding(start = 10.dp),
                     fontSize = 26.sp,
-
                     fontFamily = poppinsFontFamily,
                     fontWeight = FontWeight.Medium,
+                    fontWeight = FontWeight.Bold,
+                    fontFamily = poppinsFontFamily,
                     text = "Emblemas de mentor"
                 )
 
@@ -325,6 +325,8 @@ fun Emblemas() {
                                     .height(30.dp),
                                 fontFamily = poppinsFontFamily,
                                 fontWeight = FontWeight.Medium,
+                                fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
                             )
                         }

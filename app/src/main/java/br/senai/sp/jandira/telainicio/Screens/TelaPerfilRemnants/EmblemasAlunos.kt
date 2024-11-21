@@ -2,14 +2,11 @@ package br.senai.sp.jandira.telainicio.Screens.TelaPerfilRemnants
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
-import androidx.compose.foundation.border
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -57,6 +54,13 @@ fun EmblemasAlunos(){
             Text(text = "Ver todos",
                 fontFamily = poppinsFontFamily,
                 fontWeight = FontWeight.Medium,
+                fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily,
+                fontSize = 30.sp)
+
+            Text(text = "Ver todos",
+                fontWeight = FontWeight.Light,
+                fontFamily = poppinsFontFamily,
                 fontSize = 23.sp)
         }
 
@@ -97,6 +101,8 @@ fun EmblemasAlunos(){
                                 .height(30.dp),
                             fontFamily = poppinsFontFamily,
                             fontWeight = FontWeight.Medium,
+                            fontWeight = FontWeight.Bold,
+                            fontFamily = poppinsFontFamily,
                             text = "Nível 1"
                         )
 
@@ -130,6 +136,8 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
+                        fontWeight = FontWeight.Bold,
+                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 
@@ -164,6 +172,8 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
+                        fontWeight = FontWeight.Bold,
+                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 
@@ -198,6 +208,8 @@ fun EmblemasAlunos(){
                             .height(30.dp),
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Medium,
+                        fontWeight = FontWeight.Bold,
+                        fontFamily = poppinsFontFamily,
                         text = "Nível 1"
                     )
 

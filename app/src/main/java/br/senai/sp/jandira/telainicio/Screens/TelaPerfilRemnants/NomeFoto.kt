@@ -29,6 +29,7 @@ import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
 import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
+
 @Composable
 fun NomeFoto(){
 
@@ -72,7 +73,9 @@ fun NomeFoto(){
                     Text(
                         text = "Silvia Santos",
                         fontFamily = poppinsFontFamily,
+
                         fontWeight = FontWeight.Medium,
+
                         fontSize = 30.sp,
                     )
                 }
@@ -86,7 +89,9 @@ fun NomeFoto(){
                     Text(
                         text = "Entrou em 2021",
                         fontFamily = poppinsFontFamily,
+
                         fontWeight = FontWeight.Medium,
+
                         fontSize = 14.sp
                     )
                 }
