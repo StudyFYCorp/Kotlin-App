@@ -7,14 +7,25 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.OutlinedCard
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
+import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
@@ -25,8 +36,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CadernoVirtual(modifier: Modifier = Modifier) {
+
+    var text by remember { mutableStateOf("") }
+
+
     Column {
             Box(modifier = Modifier
                 .background(Color(0xFFFE9CE03))
@@ -46,12 +62,18 @@ fun CadernoVirtual(modifier: Modifier = Modifier) {
                         )
                 }
             }
+
         Box(modifier = Modifier
             .background(Color(0xFFFD9D9D9))
             .height(60.dp)
             .width(400.dp)
         ){
-            Row {
+            Row(modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 5.dp),
+                horizontalArrangement = Arrangement.SpaceEvenly,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
                  Image(painter = painterResource(id = R.drawable.estilotexto),
                         contentDescription = "",
                         modifier = Modifier
@@ -61,10 +83,16 @@ fun CadernoVirtual(modifier: Modifier = Modifier) {
                 Image(painter = painterResource(id = R.drawable.negrito),
                     contentDescription = "",
                     modifier = Modifier
-                        .height(30.dp)
-                        .width(30.dp)
+                        .height(20.dp)
+                        .width(20.dp)
                 )
                 Image(painter = painterResource(id = R.drawable.corsubliado),
+                    contentDescription = "",
+                    modifier = Modifier
+                        .height(40.dp)
+                        .width(45.dp)
+                )
+                Image(painter = painterResource(id = R.drawable.subliado),
                     contentDescription = "",
                     modifier = Modifier
                         .height(30.dp)
@@ -72,6 +100,24 @@ fun CadernoVirtual(modifier: Modifier = Modifier) {
                 )
             }
         }
+
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+
+        ){
+            OutlinedTextField(
+                value = text,
+                onValueChange = { text = it },
+                label = { Text("Escreva suas notas...") },
+                colors = TextFieldDefaults.outlinedTextFieldColors(
+                    unfocusedBorderColor = Color.Transparent,
+                    focusedBorderColor = Color.Transparent
+                )
+            )
+
+        }
+
     }
 }
 
