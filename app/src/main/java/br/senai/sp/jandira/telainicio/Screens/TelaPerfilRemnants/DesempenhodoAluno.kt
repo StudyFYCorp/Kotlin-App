@@ -38,6 +38,7 @@ fun DesempenhodoAluno() {
         Text(
             text = "Desempenho",
             fontFamily = poppinsFontFamily,
+
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold
         )
@@ -75,7 +76,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 5.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.medalhadeouro),
+                                painter = painterResource(id = R.drawable.primeirolugar),
                                 contentDescription = "Medalha de ouro do rank"
                             )
                         }
@@ -89,6 +90,9 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
+                                text = "Rank recorde"
+                            )
+                            Text(text = "Ouro ||")
                                 fontFamily = poppinsFontFamily,
                                 text = "Rank recorde"
                             )
@@ -136,6 +140,9 @@ fun DesempenhodoAluno() {
                                 modifier = Modifier
                                     .padding(top = 5.dp),
                                 fontSize = 18.sp,
+                                text = "Pontos"
+                            )
+                            Text(text = "210")
                                 fontFamily = poppinsFontFamily,
                                 text = "Pontos"
                             )
@@ -171,7 +178,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 10.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.calendario),
+                                painter = painterResource(id = R.drawable.calabreso2),
                                 contentDescription = "Sem parar"
                             )
                         }
@@ -184,12 +191,15 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
+
+                                text = "Sem parar!"
+                            )
+                            Text(text = "14 dias")
                                 fontFamily = poppinsFontFamily,
                                 text = "Sem parar!"
                             )
                             Text(text = "14 dias",
-                                fontFamily = poppinsFontFamily,)
-                        }
+                                fontFamily = poppinsFontFamily,)                        }
                         Box(
                             modifier = Modifier
                                 .fillMaxHeight()
@@ -219,7 +229,7 @@ fun DesempenhodoAluno() {
                                     .align(Alignment.CenterHorizontally)
                                     .padding(top = 5.dp)
                                     .size(25.dp),
-                                painter = painterResource(id = R.drawable.correto),
+                                painter = painterResource(id = R.drawable.anterior),
                                 contentDescription = "Atividades feitas"
                             )
                         }
@@ -231,6 +241,10 @@ fun DesempenhodoAluno() {
                         ) {
                             Text(
                                 fontSize = 16.sp,
+
+                                text = "Atividades feitas"
+                            )
+                            Text(text = "20")
                                 fontFamily = poppinsFontFamily,
                                 text = "Atividades feitas"
                             )

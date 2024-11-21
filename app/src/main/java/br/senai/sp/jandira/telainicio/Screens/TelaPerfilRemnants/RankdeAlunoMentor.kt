@@ -56,8 +56,11 @@ fun RankdeAlunoMentor() {
                 Text(
                     text = "Rank - mentor",
                     fontFamily = poppinsFontFamily,
+
+                    fontWeight = FontWeight.Bold,
+
                     fontSize = 30.sp,
-                    fontWeight = FontWeight.Bold
+
                 )
             }
             Row(
@@ -107,7 +110,7 @@ fun RankdeAlunoMentor() {
                             )
                             Image(
                                 modifier = Modifier.size(25.dp),
-                                painter = painterResource(id = R.drawable.estrelapelametade),
+                                painter = painterResource(id = R.drawable.anterior),
                                 contentDescription = "estrela na metade"
                             )
 
@@ -116,6 +119,9 @@ fun RankdeAlunoMentor() {
                         Text(
                             text = "(130 avaliações)",
                             fontFamily = poppinsFontFamily,
+
+                            fontWeight = FontWeight.Medium,
+
                             fontSize = 12.sp,
                             modifier = Modifier.align(Alignment.CenterHorizontally)
                         )
@@ -400,7 +406,7 @@ fun RankdeAlunoMentor() {
                                             Image(
                                                 modifier = Modifier
                                                     .size(20.dp),
-                                                painter = painterResource(id = R.drawable.fotomentor),
+                                                painter = painterResource(id = R.drawable.calabresobravo),
                                                 contentDescription = "Foto de Perfil1"
                                             )
 
@@ -470,7 +476,7 @@ fun RankdeAlunoMentor() {
                                         Image(
                                             modifier = Modifier
                                                 .size(20.dp),
-                                            painter = painterResource(id = R.drawable.fotomentor),
+                                            painter = painterResource(id = R.drawable.usuario),
                                             contentDescription = "Foto de Perfil"
                                         )
 
@@ -539,7 +545,7 @@ fun RankdeAlunoMentor() {
                                         Image(
                                             modifier = Modifier
                                                 .size(20.dp),
-                                            painter = painterResource(id = R.drawable.fotomentor),
+                                            painter = painterResource(id = R.drawable.usuario),
                                             contentDescription = "Foto de Perfil"
                                         )
 
@@ -634,7 +640,7 @@ fun RankdeAlunoMentor() {
                                             Image(
                                                 modifier = Modifier
                                                     .size(20.dp),
-                                                painter = painterResource(id = R.drawable.fotomentor),
+                                                painter = painterResource(id = R.drawable.usuario),
                                                 contentDescription = "Foto de Perfil1"
                                             )
 
@@ -721,7 +727,7 @@ fun RankdeAlunoMentor() {
                                         Image(
                                             modifier = Modifier
                                                 .size(20.dp),
-                                            painter = painterResource(id = R.drawable.fotomentor),
+                                            painter = painterResource(id = R.drawable.usuario),
                                             contentDescription = "Foto de Perfil"
                                         )
 
@@ -803,7 +809,7 @@ fun RankdeAlunoMentor() {
                                         Image(
                                             modifier = Modifier
                                                 .size(20.dp),
-                                            painter = painterResource(id = R.drawable.fotomentor),
+                                            painter = painterResource(id = R.drawable.usuario),
                                             contentDescription = "Foto de Perfil"
                                         )
 

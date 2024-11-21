@@ -73,7 +73,7 @@ fun Emblemas() {
                                     .padding(top = 10.dp)
                                     .size(80.dp)
                                     .align(Alignment.TopCenter),
-                                painter = painterResource(id = R.drawable.medalha),
+                                painter = painterResource(id = R.drawable.primeirolugar),
                                 contentDescription = "Medalha"
                             )
                             Text(
@@ -257,6 +257,7 @@ fun Emblemas() {
                                 Text(
                                     fontSize = 12.sp,
                                     fontFamily = poppinsFontFamily,
+                                    fontWeight = FontWeight.Medium,
                                     text = "Acabou uma matéria"
                                 )
 
@@ -287,6 +288,8 @@ fun Emblemas() {
                 Text(
                     modifier = Modifier.padding(start = 10.dp),
                     fontSize = 26.sp,
+                    fontFamily = poppinsFontFamily,
+                    fontWeight = FontWeight.Medium,
                     fontWeight = FontWeight.Bold,
                     fontFamily = poppinsFontFamily,
                     text = "Emblemas de mentor"
@@ -312,7 +315,7 @@ fun Emblemas() {
                                     .padding(top = 10.dp)
                                     .size(80.dp)
                                     .align(Alignment.TopCenter),
-                                painter = painterResource(id = R.drawable.medalha),
+                                painter = painterResource(id = R.drawable.bronzei),
                                 contentDescription = "Medalha"
                             )
                             Text(
@@ -320,6 +323,8 @@ fun Emblemas() {
                                 modifier = Modifier
                                     .align(Alignment.BottomCenter)
                                     .height(30.dp),
+                                fontFamily = poppinsFontFamily,
+                                fontWeight = FontWeight.Medium,
                                 fontWeight = FontWeight.Bold,
                                 fontFamily = poppinsFontFamily,
                                 text = "Nível 1"
@@ -341,11 +346,13 @@ fun Emblemas() {
                                     modifier = Modifier.padding(top = 10.dp),
                                     fontSize = 20.sp,
                                     fontFamily = poppinsFontFamily,
+                                    fontWeight = FontWeight.Medium,
                                     text = "Engatinhando"
                                 )
                                 Text(
                                     fontSize = 12.sp,
                                     fontFamily = poppinsFontFamily,
+                                    fontWeight = FontWeight.Medium,
                                     text = "Realizou a primeira atividade da aplicação"
                                 )
 

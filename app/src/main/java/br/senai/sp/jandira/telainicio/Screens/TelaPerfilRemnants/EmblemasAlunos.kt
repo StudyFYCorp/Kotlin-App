@@ -47,6 +47,13 @@ fun EmblemasAlunos(){
             .fillMaxWidth()
         ) {
             Text(text = "Emblemas",
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Medium,
+                fontSize = 30.sp)
+
+            Text(text = "Ver todos",
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Medium,
                 fontWeight = FontWeight.Bold,
                 fontFamily = poppinsFontFamily,
                 fontSize = 30.sp)
@@ -84,7 +91,7 @@ fun EmblemasAlunos(){
                                 .padding(top = 10.dp)
                                 .size(60.dp)
                                 .align(Alignment.TopCenter),
-                            painter = painterResource(id = R.drawable.medalha),
+                            painter = painterResource(id = R.drawable.primeirolugar),
                             contentDescription = "Medalha"
                         )
                         Text(
@@ -92,6 +99,8 @@ fun EmblemasAlunos(){
                             modifier = Modifier
                                 .align(Alignment.BottomCenter)
                                 .height(30.dp),
+                            fontFamily = poppinsFontFamily,
+                            fontWeight = FontWeight.Medium,
                             fontWeight = FontWeight.Bold,
                             fontFamily = poppinsFontFamily,
                             text = "Nível 1"
@@ -125,6 +134,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         fontWeight = FontWeight.Bold,
                         fontFamily = poppinsFontFamily,
                         text = "Nível 1"
@@ -159,6 +170,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         fontWeight = FontWeight.Bold,
                         fontFamily = poppinsFontFamily,
                         text = "Nível 1"
@@ -185,7 +198,7 @@ fun EmblemasAlunos(){
                             .padding(top = 10.dp)
                             .size(60.dp)
                             .align(Alignment.TopCenter),
-                        painter = painterResource(id = R.drawable.medalha),
+                        painter = painterResource(id = R.drawable.primeirolugar),
                         contentDescription = "Medalha"
                     )
                     Text(
@@ -193,6 +206,8 @@ fun EmblemasAlunos(){
                         modifier = Modifier
                             .align(Alignment.BottomCenter)
                             .height(30.dp),
+                        fontFamily = poppinsFontFamily,
+                        fontWeight = FontWeight.Medium,
                         fontWeight = FontWeight.Bold,
                         fontFamily = poppinsFontFamily,
                         text = "Nível 1"
