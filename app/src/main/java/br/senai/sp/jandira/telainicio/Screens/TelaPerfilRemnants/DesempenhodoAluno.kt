@@ -54,11 +54,7 @@ fun DesempenhodoAluno() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(55.dp)
-                    .border(
-                        2.dp,
-                        Color(0xFFD9D9D9),
-                        RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp)
-                    )
+                    .border(2.dp, Color(0xFFD9D9D9), RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp))
 
             ) {
                 Box(
@@ -96,160 +92,164 @@ fun DesempenhodoAluno() {
                                 fontSize = 18.sp,
                                 text = "Rank recorde"
                             )
-                            Text(
-                                text = "Ouro ||",
-                                fontFamily = poppinsFontFamily
+                            Text(text = "Ouro ||")
+                                fontFamily = poppinsFontFamily,
+                                text = "Rank recorde"
                             )
-                        }
-
-                    }
-
-                    Box(
-                        modifier = Modifier
-                            .height(100.dp)
-                            .fillMaxWidth()
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFD9D9D9),
-                                shape = RoundedCornerShape(topEnd = 8.dp)
-                            )
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .padding(top = 3.dp)
-                        ) {
-                            Column(
-                                modifier = Modifier
-                                    .height(100.dp)
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 5.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.pontos),
-                                    contentDescription = "Pontos do perfil"
-                                )
-                            }
-
-                            Column(
-                                modifier = Modifier
-                                    .width(140.dp)
-                                    .height(60.dp)
-                            ) {
-                                Text(
-                                    modifier = Modifier
-                                        .padding(top = 5.dp),
-                                    fontSize = 18.sp,
-                                    text = "Pontos"
-                                )
-                                Text(
-                                    text = "210",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
-
+                            Text(text = "Ouro ||",
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
                 }
 
-                Row(
+                Box(
                     modifier = Modifier
+                        .height(100.dp)
                         .fillMaxWidth()
-                        .fillMaxHeight()
-
+                        .border(
+                            width = 2.dp,
+                            color = Color(0xFFD9D9D9),
+                            shape = RoundedCornerShape(topEnd = 8.dp)
+                        )
                 ) {
-                    Box(
+                    Row(
                         modifier = Modifier
-                            .fillMaxHeight()
-                            .width(192.dp)
+                            .padding(top = 3.dp)
                     ) {
-                        Row(
+                        Column(
                             modifier = Modifier
-                                .fillMaxHeight()
+                                .height(100.dp)
+                                .width(50.dp)
                         ) {
-                            Column(
+                            Image(
                                 modifier = Modifier
-                                    .fillMaxHeight()
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 10.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.calabreso2),
-                                    contentDescription = "Sem parar"
-                                )
-                            }
-
-                            Column(
-                                modifier = Modifier
-                                    .padding(top = 6.dp)
-                                    .width(140.dp)
-                                    .fillMaxHeight()
-                            ) {
-                                Text(
-                                    fontSize = 16.sp,
-                                    text = "Sem parar!"
-                                )
-                                Text(
-                                    text = "14 dias",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
-
-                            Box(
-                                modifier = Modifier
-                                    .fillMaxHeight()
-                                    .background(Color(0xFFD9D9D9))
-                                    .width(2.dp)
+                                    .align(Alignment.CenterHorizontally)
+                                    .padding(top = 5.dp)
+                                    .size(25.dp),
+                                painter = painterResource(id = R.drawable.pontos),
+                                contentDescription = "Pontos do perfil"
                             )
+                        }
 
-
+                        Column(
+                            modifier = Modifier
+                                .width(140.dp)
+                                .height(60.dp)
+                        ) {
+                            Text(
+                                modifier = Modifier
+                                    .padding(top = 5.dp),
+                                fontSize = 18.sp,
+                                text = "Pontos"
+                            )
+                            Text(text = "210")
+                                fontFamily = poppinsFontFamily,
+                                text = "Pontos"
+                            )
+                            Text(text = "210",
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
+                }
+            }
 
-                    Box(
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .fillMaxHeight()
+
+            ) {
+                Box(
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .width(192.dp)
+                ) {
+                    Row(
                         modifier = Modifier
-                            .height(100.dp)
-                            .width(190.dp)
+                            .fillMaxHeight()
                     ) {
-                        Row(
+                        Column(
+                            modifier = Modifier
+                                .fillMaxHeight()
+                                .width(50.dp)
+                        ) {
+                            Image(
+                                modifier = Modifier
+                                    .align(Alignment.CenterHorizontally)
+                                    .padding(top = 10.dp)
+                                    .size(25.dp),
+                                painter = painterResource(id = R.drawable.calabreso2),
+                                contentDescription = "Sem parar"
+                            )
+                        }
+
+                        Column(
                             modifier = Modifier
                                 .padding(top = 6.dp)
+                                .width(140.dp)
+                                .fillMaxHeight()
                         ) {
-                            Column(
-                                modifier = Modifier
-                                    .height(100.dp)
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 5.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.anterior),
-                                    contentDescription = "Atividades feitas"
-                                )
-                            }
+                            Text(
+                                fontSize = 16.sp,
 
-                            Column(
-                                modifier = Modifier
-                                    .width(140.dp)
-                                    .height(40.dp)
-                            ) {
-                                Text(
-                                    fontSize = 16.sp,
-                                    text = "Atividades feitas"
-                                )
-                                Text(
-                                    text = "20",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
+                                text = "Sem parar!"
+                            )
+                            Text(text = "14 dias")
+                                fontFamily = poppinsFontFamily,
+                                text = "Sem parar!"
+                            )
+                            Text(text = "14 dias",
+                                fontFamily = poppinsFontFamily,)                        }
+                        Box(
+                            modifier = Modifier
+                                .fillMaxHeight()
+                                .background(Color(0xFFD9D9D9))
+                                .width(2.dp)
+                        )
 
+                    }
+                }
+
+                Box(
+                    modifier = Modifier
+                        .height(100.dp)
+                        .width(190.dp)
+                ) {
+                    Row(
+                        modifier = Modifier
+                            .padding(top = 6.dp)
+                    ) {
+                        Column(
+                            modifier = Modifier
+                                .height(100.dp)
+                                .width(50.dp)
+                        ) {
+                            Image(
+                                modifier = Modifier
+                                    .align(Alignment.CenterHorizontally)
+                                    .padding(top = 5.dp)
+                                    .size(25.dp),
+                                painter = painterResource(id = R.drawable.anterior),
+                                contentDescription = "Atividades feitas"
+                            )
+                        }
+
+                        Column(
+                            modifier = Modifier
+                                .width(140.dp)
+                                .height(40.dp)
+                        ) {
+                            Text(
+                                fontSize = 16.sp,
+
+                                text = "Atividades feitas"
+                            )
+                            Text(text = "20")
+                                fontFamily = poppinsFontFamily,
+                                text = "Atividades feitas"
+                            )
+                            Text(text = "20",
+                                fontFamily = poppinsFontFamily,)
                         }
                     }
                 }
@@ -257,6 +257,7 @@ fun DesempenhodoAluno() {
         }
     }
 }
+
 
 
 @Preview(showBackground = true, showSystemUi = true)
