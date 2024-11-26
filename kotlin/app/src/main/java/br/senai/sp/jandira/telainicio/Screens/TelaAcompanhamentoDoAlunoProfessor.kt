@@ -41,6 +41,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -54,13 +55,15 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
             Text(
                 text = "Acompanhamento",
                 fontSize = 20.sp,
-                modifier = Modifier.padding(top = 15.dp)
+                modifier = Modifier.padding(top = 15.dp),
+                fontFamily = poppinsFontFamily
             )
             Text(
                 text = "Insira o código de um aluno para começar a acompanhá-lo",
                 fontSize = 25.sp,
                 fontWeight = FontWeight.ExtraLight,
                 textAlign = TextAlign.Center,
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier
                     .padding(40.dp)
             )
@@ -90,7 +93,8 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                     Text(
                         text = "XXX-XXX",
                         color = Color.Black,
-                        fontSize = 20.sp
+                        fontFamily = poppinsFontFamily,
+                        fontSize = 17.sp
                     )
                 }
             )
@@ -158,11 +162,13 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                         Text(
                             text = "Suzane Dahora",
                             textAlign = TextAlign.Center, fontSize = 18.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(top = 10.dp, start = 50.dp)
                         )
                         Text(
                             text = "3º fund2",
                             textAlign = TextAlign.Center, fontSize = 12.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(start = 90.dp)
                         )
                         Row(
@@ -179,6 +185,7 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                     text = "Assunto:",
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.ExtraLight,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier
                                         .padding(top = 12.dp, start = 46.dp)
                                 )
@@ -190,7 +197,8 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
 
                                 Text(
                                     text = "Soma e subtração de números primos",
-                                    fontSize = 9.5.sp,
+                                    fontFamily = poppinsFontFamily,
+                                    fontSize = 9.sp,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(start = 45.dp, top = 30.dp)
                                 )
@@ -203,16 +211,20 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                 Image(
                                     painter = painterResource(id = R.drawable.relogio),
                                     contentDescription = "",
-                                    modifier = Modifier.size(50.dp).padding(top = 25.dp)
+
+                                    modifier = Modifier.size(50.dp).padding(top = 25.dp),
+
                                 )
 
                                 Text(
-                                    text = "Última atividade feita há", fontSize = 10.sp,
+                                    text = "Última atividade feita há", fontSize = 8.sp,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(top = 10.dp, start = 10.dp)
                                 )
                                 Text(
                                     text = "12 Horas",
                                     fontSize = 12.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(top = 30.dp, start = 40.dp)
                                 )
@@ -283,11 +295,13 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                         Text(
                             text = "Suzane Dahora",
                             textAlign = TextAlign.Center, fontSize = 18.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(top = 10.dp, start = 50.dp)
                         )
                         Text(
                             text = "3º fund2",
                             textAlign = TextAlign.Center, fontSize = 12.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(start = 90.dp)
                         )
                         Row(
@@ -304,18 +318,21 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                     text = "Assunto:",
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.ExtraLight,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier
                                         .padding(top = 12.dp, start = 46.dp)
                                 )
                                 Image(
                                     painter = painterResource(id = R.drawable.livros),
                                     contentDescription = "",
+
                                     modifier = Modifier.size(55.dp).padding(top = 30.dp)
                                 )
 
                                 Text(
                                     text = "Soma e subtração de números primos",
-                                    fontSize = 9.5.sp,
+                                    fontSize = 9.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(start = 45.dp, top = 30.dp)
                                 )
@@ -332,12 +349,14 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                 )
 
                                 Text(
-                                    text = "Última atividade feita há", fontSize = 10.sp,
+                                    text = "Última atividade feita há", fontSize = 8.sp,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(top = 10.dp, start = 10.dp)
                                 )
                                 Text(
                                     text = "12 Horas",
                                     fontSize = 12.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(top = 30.dp, start = 40.dp)
                                 )
@@ -407,11 +426,13 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                         Text(
                             text = "Suzane Dahora",
                             textAlign = TextAlign.Center, fontSize = 18.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(top = 10.dp, start = 50.dp)
                         )
                         Text(
                             text = "3º fund2",
                             textAlign = TextAlign.Center, fontSize = 12.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(start = 90.dp)
                         )
                         Row(
@@ -428,6 +449,7 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                     text = "Assunto:",
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.ExtraLight,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier
                                         .padding(top = 12.dp, start = 46.dp)
                                 )
@@ -439,7 +461,8 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
 
                                 Text(
                                     text = "Soma e subtração de números primos",
-                                    fontSize = 9.5.sp,
+                                    fontSize = 9.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(start = 45.dp, top = 30.dp)
                                 )
@@ -452,16 +475,19 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                 Image(
                                     painter = painterResource(id = R.drawable.relogio),
                                     contentDescription = "",
+
                                     modifier = Modifier.size(50.dp).padding(top = 25.dp)
                                 )
 
                                 Text(
-                                    text = "Última atividade feita há", fontSize = 10.sp,
+                                    text = "Última atividade feita há", fontSize = 8.sp,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(top = 10.dp, start = 10.dp)
                                 )
                                 Text(
                                     text = "12 Horas",
                                     fontSize = 12.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(top = 30.dp, start = 40.dp)
                                 )
@@ -530,11 +556,13 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                     ) {
                         Text(
                             text = "Suzane Dahora",
+                            fontFamily = poppinsFontFamily,
                             textAlign = TextAlign.Center, fontSize = 18.sp,
                             modifier = Modifier.padding(top = 10.dp, start = 50.dp)
                         )
                         Text(
                             text = "3º fund2",
+                            fontFamily = poppinsFontFamily,
                             textAlign = TextAlign.Center, fontSize = 12.sp,
                             modifier = Modifier.padding(start = 90.dp)
                         )
@@ -550,6 +578,7 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                             ) {
                                 Text(
                                     text = "Assunto:",
+                                    fontFamily = poppinsFontFamily,
                                     fontSize = 14.sp,
                                     fontWeight = FontWeight.ExtraLight,
                                     modifier = Modifier
@@ -563,7 +592,8 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
 
                                 Text(
                                     text = "Soma e subtração de números primos",
-                                    fontSize = 9.5.sp,
+                                    fontSize = 9.sp,
+                                    fontFamily = poppinsFontFamily,
                                     fontWeight = FontWeight.Bold,
                                     modifier = Modifier.padding(start = 45.dp, top = 30.dp)
                                 )
@@ -580,13 +610,15 @@ fun acompanhamentoProfessor(modifier: Modifier = Modifier) {
                                 )
 
                                 Text(
-                                    text = "Última atividade feita há", fontSize = 10.sp,
+                                    text = "Última atividade feita há", fontSize = 8.sp,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(top = 10.dp, start = 10.dp)
                                 )
                                 Text(
                                     text = "12 Horas",
                                     fontSize = 12.sp,
                                     fontWeight = FontWeight.Bold,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(top = 30.dp, start = 40.dp)
                                 )
                             }

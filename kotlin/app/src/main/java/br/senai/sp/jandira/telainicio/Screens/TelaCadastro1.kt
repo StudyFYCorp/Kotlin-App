@@ -61,6 +61,7 @@ import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.model.Aluno
 import br.senai.sp.jandira.telainicio.model.Materia
 import br.senai.sp.jandira.telainicio.model.ResultMateria
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -186,6 +187,7 @@ fun TelaCadastro1(
                     fontSize = 30.sp,
                     color = Color(0xFF302F2F),
                     text = "Cadastre-se",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier
                         .align(Alignment.BottomCenter) // Alinhando ao fundo da Box
                         .padding(bottom = 20.dp) // Adicionando um padding para não ficar muito colado
@@ -214,9 +216,10 @@ fun TelaCadastro1(
                 ) {
                     // Primeiro passo: Cadastro
                     Text(
-                        fontSize = 23.sp,
+                        fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
                         color = Color.Black,
+                        fontFamily = poppinsFontFamily,
                         text = "Para ter maior desempenho nos seus estudos",
                         modifier = Modifier.padding(bottom = 16.dp)
                     )
@@ -228,6 +231,7 @@ fun TelaCadastro1(
                                 Icon(
                                     imageVector = Icons.Default.Person,
                                     contentDescription = "Nome",
+
                                     tint = Color(0xFFFEE101)
                                 )
                             }
@@ -241,7 +245,7 @@ fun TelaCadastro1(
                             focusedBorderColor = Color(0xFFE9CE03),
                             unfocusedBorderColor = Color(0xFFE9CE03)
                         ),
-                        label = { Text(text = "Nome", color = Color.Black) }
+                        label = { Text(text = "Nome", color = Color.Black,   fontFamily = poppinsFontFamily) }
                     )
 
                     OutlinedTextField(
@@ -263,7 +267,7 @@ fun TelaCadastro1(
                             focusedBorderColor = Color(0xFFE9CE03),
                             unfocusedBorderColor = Color(0xFFE9CE03)
                         ),
-                        label = { Text(text = "Email", color = Color.Black) }
+                        label = { Text(text = "Email", color = Color.Black,   fontFamily = poppinsFontFamily) }
                     )
                     OutlinedTextField(
                         trailingIcon = {
@@ -284,7 +288,7 @@ fun TelaCadastro1(
                             focusedBorderColor = Color(0xFFE9CE03),
                             unfocusedBorderColor = Color(0xFFE9CE03)
                         ),
-                        label = { Text(text = "Senha", color = Color.Black) }
+                        label = { Text(text = "Senha", color = Color.Black,   fontFamily = poppinsFontFamily) }
                     )
                     OutlinedTextField(
                         trailingIcon = {
@@ -305,7 +309,7 @@ fun TelaCadastro1(
                             focusedBorderColor = Color(0xFFE9CE03),
                             unfocusedBorderColor = Color(0xFFE9CE03)
                         ),
-                        label = { Text(text = "Telefone", color = Color.Black) }
+                        label = { Text(text = "Telefone", color = Color.Black,   fontFamily = poppinsFontFamily) }
                     )
 
                     Row(
@@ -314,6 +318,7 @@ fun TelaCadastro1(
                     ) {
                         Text(
                             text = "Ou cadastre-se com: ",
+                            fontFamily = poppinsFontFamily,
                             color = Color.Black
                         )
                         Spacer(modifier = Modifier.width(4.dp))
@@ -330,9 +335,10 @@ fun TelaCadastro1(
                     Button(
                         onClick = { etapa2.value = true },
                         colors = ButtonDefaults.buttonColors(Color(0xFFFEE101)),
+
                         modifier = Modifier.align(Alignment.End)
                     ) {
-                        Text(text = "Prox. passo", color = Color.Black, letterSpacing = 1.sp)
+                        Text(text = "Prox. passo", color = Color.Black, letterSpacing = 1.sp,   fontFamily = poppinsFontFamily)
                         Icon(
                             imageVector = Icons.Filled.ArrowForward,
                             contentDescription = "",
