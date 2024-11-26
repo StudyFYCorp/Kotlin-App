@@ -120,10 +120,14 @@ fun Suporte(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .size(20.dp)
                     )
-                Text("Fale conosco",
-                    fontSize = 10.sp,
+                Text(
+
+                    "  Fale conosco",
+
+                    fontSize = 11.sp,
                     fontFamily = poppinsFontFamily,
                     color = Color.Black,
+
                     )
             }
 

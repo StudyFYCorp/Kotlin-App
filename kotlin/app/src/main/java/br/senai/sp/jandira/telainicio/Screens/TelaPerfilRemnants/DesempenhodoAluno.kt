@@ -6,6 +6,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -28,28 +29,31 @@ import br.senai.sp.jandira.telainicio.Screens.TelaPerfil
 import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
-fun DesempenhodoAluno() {
-
-    Box(
+fun DesempenhoDoAluno() {
+    Column(
         modifier = Modifier
             .fillMaxHeight()
-            .fillMaxWidth(),
+            .fillMaxWidth()
+            .padding(16.dp)
     ) {
+        // Título
         Text(
             text = "Desempenho",
             fontFamily = poppinsFontFamily,
-
             fontSize = 24.sp,
-            fontWeight = FontWeight.Bold
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(bottom = 16.dp)
         )
+
+        // Contêiner da tabela
         Column(
             modifier = Modifier
-                .padding(top = 45.dp)
                 .height(110.dp)
                 .fillMaxWidth()
                 .border(2.dp, Color(0xFFD9D9D9), RoundedCornerShape(8.dp))
                 .background(Color.Transparent, shape = RoundedCornerShape(8.dp))
         ) {
+            // Linha 1: Rank recorde e Pontos
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -59,211 +63,107 @@ fun DesempenhodoAluno() {
                         Color(0xFFD9D9D9),
                         RoundedCornerShape(topStart = 8.dp, topEnd = 8.dp)
                     )
-
             ) {
+                TabelaItem(
+                    iconId = R.drawable.medalhadeouro,
+                    title = "Rank recorde",
+                    value = "Ouro III",
+                    modifier = Modifier.weight(1f)
+                )
+                // Divisória
                 Box(
                     modifier = Modifier
-                        .height(70.dp)
-                        .width(190.dp)
-                ) {
-                    Row(
-                        modifier = Modifier
-                            .padding(top = 3.dp)
-                    ) {
-                        Column(
-                            modifier = Modifier
-                                .height(50.dp)
-                                .width(50.dp)
-                        ) {
-                            Image(
-                                modifier = Modifier
-                                    .align(Alignment.CenterHorizontally)
-                                    .padding(top = 5.dp)
-                                    .size(25.dp),
-                                painter = painterResource(id = R.drawable.primeirolugar),
-                                contentDescription = "Medalha de ouro do rank"
-                            )
-                        }
-
-                        Column(
-                            modifier = Modifier
-                                .width(140.dp)
-                                .height(60.dp)
-                        ) {
-                            Text(
-                                modifier = Modifier
-                                    .padding(top = 5.dp),
-                                fontSize = 18.sp,
-                                text = "Rank recorde"
-                            )
-                            Text(
-                                text = "Ouro ||",
-                                fontFamily = poppinsFontFamily
-                            )
-                        }
-
-                    }
-
-                    Box(
-                        modifier = Modifier
-                            .height(100.dp)
-                            .fillMaxWidth()
-                            .border(
-                                width = 2.dp,
-                                color = Color(0xFFD9D9D9),
-                                shape = RoundedCornerShape(topEnd = 8.dp)
-                            )
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .padding(top = 3.dp)
-                        ) {
-                            Column(
-                                modifier = Modifier
-                                    .height(100.dp)
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 5.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.pontos),
-                                    contentDescription = "Pontos do perfil"
-                                )
-                            }
-
-                            Column(
-                                modifier = Modifier
-                                    .width(140.dp)
-                                    .height(60.dp)
-                            ) {
-                                Text(
-                                    modifier = Modifier
-                                        .padding(top = 5.dp),
-                                    fontSize = 18.sp,
-                                    fontFamily = poppinsFontFamily,
-                                    text = "Pontos"
-                                )
-                                Text(
-                                    text = "210",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
-
-                        }
-                    }
-                }
-
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
                         .fillMaxHeight()
+                        .width(1.dp)
+                        .background(Color(0xFFD9D9D9))
+                )
+                TabelaItem(
+                    iconId = R.drawable.pontos,
+                    title = "Pontos",
+                    value = "210",
+                    modifier = Modifier.weight(1f)
+                )
+            }
 
-                ) {
-                    Box(
-                        modifier = Modifier
-                            .fillMaxHeight()
-                            .width(192.dp)
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .fillMaxHeight()
-                        ) {
-                            Column(
-                                modifier = Modifier
-                                    .fillMaxHeight()
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 10.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.calabreso2),
-                                    contentDescription = "Sem parar"
-                                )
-                            }
-
-                            Column(
-                                modifier = Modifier
-                                    .padding(top = 6.dp)
-                                    .width(140.dp)
-                                    .fillMaxHeight()
-                            ) {
-                                Text(
-                                    fontSize = 16.sp,
-                                    fontFamily = poppinsFontFamily,
-                                    text = "Sem parar!"
-                                )
-                                Text(
-                                    text = "14 dias",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
-
-                            Box(
-                                modifier = Modifier
-                                    .fillMaxHeight()
-                                    .background(Color(0xFFD9D9D9))
-                                    .width(2.dp)
-                            )
-
-
-                        }
-                    }
-
-                    Box(
-                        modifier = Modifier
-                            .height(100.dp)
-                            .width(190.dp)
-                    ) {
-                        Row(
-                            modifier = Modifier
-                                .padding(top = 6.dp)
-                        ) {
-                            Column(
-                                modifier = Modifier
-                                    .height(100.dp)
-                                    .width(50.dp)
-                            ) {
-                                Image(
-                                    modifier = Modifier
-                                        .align(Alignment.CenterHorizontally)
-                                        .padding(top = 5.dp)
-                                        .size(25.dp),
-                                    painter = painterResource(id = R.drawable.anterior),
-                                    contentDescription = "Atividades feitas"
-                                )
-                            }
-
-                            Column(
-                                modifier = Modifier
-                                    .width(140.dp)
-                                    .height(40.dp)
-                            ) {
-                                Text(
-                                    fontSize = 16.sp,
-                                    fontFamily = poppinsFontFamily,
-                                    text = "Atividades feitas"
-                                )
-                                Text(
-                                    text = "20",
-                                    fontFamily = poppinsFontFamily
-                                )
-                            }
-
-                        }
-                    }
-                }
+            // Linha 2: Sem parar e Atividades feitas
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(55.dp)
+            ) {
+                TabelaItem(
+                    iconId = R.drawable.fogo,
+                    title = "Sem parar!",
+                    value = "14 dias",
+                    modifier = Modifier.weight(1f)
+                )
+                // Divisória
+                Box(
+                    modifier = Modifier
+                        .fillMaxHeight()
+                        .width(1.dp)
+                        .background(Color(0xFFD9D9D9))
+                )
+                TabelaItem(
+                    iconId = R.drawable.correto,
+                    title = "Atividades feitas",
+                    value = "20",
+                    modifier = Modifier.weight(1f)
+                )
             }
         }
     }
 }
 
+@Composable
+fun TabelaItem(
+    iconId: Int,
+    title: String,
+    value: String,
+    modifier: Modifier = Modifier
+) {
+    Row(
+        modifier = modifier
+            .padding(8.dp)
+            .fillMaxHeight(),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        // Ícone
+        Image(
+            painter = painterResource(id = iconId),
+            contentDescription = null,
+            modifier = Modifier
+                .size(25.dp)
+                .align(Alignment.CenterVertically)
+        )
+
+        // Espaçamento entre ícone e texto
+        Spacer(modifier = Modifier.width(8.dp))
+
+        // Textos (Título e Valor)
+        Column {
+            Text(
+                text = title,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily
+            )
+            Text(
+                text = value,
+                fontSize = 14.sp,
+                color = Color.Gray,
+                fontFamily = poppinsFontFamily
+            )
+        }
+    }
+}
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
-fun DesempenhodoAlunoPreview() {
-    DesempenhodoAluno()
+fun DesempenhoDoAlunoPreview() {
+    DesempenhoDoAluno()
+}
+
+class DesempenhodoAluno {
+
 }

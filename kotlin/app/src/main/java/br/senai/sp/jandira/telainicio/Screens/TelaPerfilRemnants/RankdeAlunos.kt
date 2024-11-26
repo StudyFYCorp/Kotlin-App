@@ -110,7 +110,7 @@ fun RankdeAlunos(){
                                             fontFamily = poppinsFontFamily,
                                             text = "#9",
                                             fontWeight = FontWeight.Bold,
-                                            fontSize = 18.sp
+                                            fontSize = 15.sp
                                         )
                                     }
 
@@ -119,8 +119,8 @@ fun RankdeAlunos(){
                                     Image(
                                         modifier = Modifier
                                             .padding(top = 5.dp)
-                                            .size(45.dp),
-                                        painter = painterResource(id = R.drawable.prataii),
+                                            .size(40.dp),
+                                        painter = painterResource(id = R.drawable.pessoa1),
                                         contentDescription = "Foto de Perfil1"
                                     )
 
@@ -130,7 +130,7 @@ fun RankdeAlunos(){
                                     ) {
                                         //NOME VINDO DO BANCO
                                         Text(
-                                            modifier = Modifier.padding(top = 20.dp),
+                                            modifier = Modifier.padding(top = 20.dp, start = 10.dp),
                                             text = "grande eweww...",
                                             fontFamily = poppinsFontFamily,
 
@@ -148,6 +148,7 @@ fun RankdeAlunos(){
                                             .width(37.dp),
                                         text = "271PTS",
                                         fontFamily = poppinsFontFamily,
+                                        fontWeight = FontWeight.Bold,
 
                                         fontSize = 10.sp
                                     )
@@ -181,7 +182,7 @@ fun RankdeAlunos(){
                                         text = "#10",
                                         fontFamily = poppinsFontFamily,
                                         fontWeight = FontWeight.Bold,
-                                        fontSize = 18.sp
+                                        fontSize = 15.sp
                                     )
                                 }
 
@@ -190,7 +191,7 @@ fun RankdeAlunos(){
                                 Image(
                                     modifier = Modifier
                                         .padding(top = 5.dp)
-                                        .size(45.dp),
+                                        .size(40.dp),
                                     painter = painterResource(id = R.drawable.usuario),
                                     contentDescription = "Foto de Perfil"
                                 )
@@ -202,7 +203,7 @@ fun RankdeAlunos(){
                                 ) {
                                     //NOME VINDO DO BANCO
                                     Text(
-                                        modifier = Modifier.padding(top = 20.dp),
+                                        modifier = Modifier.padding(top = 20.dp, start = 10.dp),
                                         text = "Silvia Santos",
                                         fontFamily = poppinsFontFamily,
 
@@ -221,6 +222,7 @@ fun RankdeAlunos(){
                                         .width(37.dp),
                                     text = "219PTS",
                                     fontFamily = poppinsFontFamily,
+                                    fontWeight = FontWeight.Bold,
 
                                     fontSize = 10.sp
                                 )
@@ -251,7 +253,7 @@ fun RankdeAlunos(){
                                         text = "#11",
                                         fontFamily = poppinsFontFamily,
                                         fontWeight = FontWeight.Bold,
-                                        fontSize = 18.sp
+                                        fontSize = 15.sp
                                     )
                                 }
 
@@ -260,8 +262,8 @@ fun RankdeAlunos(){
                                 Image(
                                     modifier = Modifier
                                         .padding(top = 5.dp)
-                                        .size(45.dp),
-                                    painter = painterResource(id = R.drawable.anteriorduplo),
+                                        .size(40.dp),
+                                    painter = painterResource(id = R.drawable.usuario),
                                     contentDescription = "Foto de Perfil"
                                 )
 
@@ -272,7 +274,7 @@ fun RankdeAlunos(){
                                 ) {
                                     //NOME VINDO DO BANCO
                                     Text(
-                                        modifier = Modifier.padding(top = 20.dp),
+                                        modifier = Modifier.padding(top = 20.dp, start = 10.dp),
                                         text = "Tom Holland",
                                         fontFamily = poppinsFontFamily,
                                         fontSize = 10.sp
@@ -289,6 +291,7 @@ fun RankdeAlunos(){
                                         .width(37.dp),
                                     text = "189PTS",
                                     fontFamily = poppinsFontFamily,
+                                    fontWeight = FontWeight.Bold,
 
                                     fontSize = 10.sp
                                 )

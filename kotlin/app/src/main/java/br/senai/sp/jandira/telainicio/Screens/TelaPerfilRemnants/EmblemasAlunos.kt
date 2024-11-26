@@ -54,7 +54,7 @@ fun EmblemasAlunos(){
             Text(text = "Ver todos",
                 fontFamily = poppinsFontFamily,
                 fontWeight = FontWeight.Medium,
-                fontSize = 30.sp)
+                fontSize = 20.sp)
 
             Text(text = "Ver todos",
                 fontWeight = FontWeight.Light,
@@ -65,9 +65,10 @@ fun EmblemasAlunos(){
         //ADICIONAR UMA BARRA DE ROLAGEM
 
         Row (modifier = Modifier
-            .height(110.dp)
+            .height(200.dp)
             .horizontalScroll(scrollState)
             .fillMaxWidth(),
+
             horizontalArrangement = Arrangement.SpaceEvenly
         ){
 

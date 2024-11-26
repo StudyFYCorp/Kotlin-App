@@ -83,10 +83,8 @@ fun InformacoesdoAluno(){
                 Text(
                     text = "Aluno/Mentor",
                     fontFamily = poppinsFontFamily,
-
                     fontWeight = FontWeight.Medium,
-
-                    fontSize = 18.sp
+                    fontSize = 15.sp
                 )
             }
         }
@@ -125,10 +123,10 @@ fun InformacoesdoAluno(){
 
             Button(
                 modifier = Modifier
-                    .padding(start = 30.dp)
+                    .padding(start = 40.dp)
                     .offset(y = -10.dp)
                     .height(50.dp)
-                    .width(150.dp),
+                    .width(130.dp),
                 onClick = {},
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFFEE101)),
                 shape = RoundedCornerShape(8.dp)
@@ -164,7 +162,7 @@ fun InformacoesdoAluno(){
                         fontWeight = FontWeight.Bold,
                         fontFamily = poppinsFontFamily,
 
-                        fontSize = 20.sp
+                        fontSize = 16.sp
                     )
                     Text(
                         text = "Segunda Guerra Mundial",

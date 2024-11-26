@@ -73,7 +73,7 @@ fun Emblemas() {
                                     .padding(top = 10.dp)
                                     .size(80.dp)
                                     .align(Alignment.TopCenter),
-                                painter = painterResource(id = R.drawable.primeirolugar),
+                                painter = painterResource(id = R.drawable.nivel1),
                                 contentDescription = "Medalha"
                             )
                             Text(
@@ -146,7 +146,7 @@ fun Emblemas() {
                                     .padding(top = 10.dp)
                                     .size(80.dp)
                                     .align(Alignment.TopCenter),
-                                painter = painterResource(id = R.drawable.livros),
+                                painter = painterResource(id = R.drawable.image),
                                 contentDescription = "Livros Emblema"
                             )
                             Text(
@@ -313,7 +313,7 @@ fun Emblemas() {
                                     .padding(top = 10.dp)
                                     .size(80.dp)
                                     .align(Alignment.TopCenter),
-                                painter = painterResource(id = R.drawable.bronzei),
+                                painter = painterResource(id = R.drawable.nivel1),
                                 contentDescription = "Medalha"
                             )
                             Text(

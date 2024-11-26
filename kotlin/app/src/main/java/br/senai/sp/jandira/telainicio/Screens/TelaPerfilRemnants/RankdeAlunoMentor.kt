@@ -89,44 +89,27 @@ fun RankdeAlunoMentor() {
                             verticalAlignment = Alignment.CenterVertically
                         ) {
                             Image(
-                                modifier = Modifier.size(25.dp),
+                                modifier = Modifier.size(125.dp),
                                 painter = painterResource(id = R.drawable.estrela),
                                 contentDescription = "estrela"
                             )
-                            Image(
-                                modifier = Modifier.size(25.dp),
-                                painter = painterResource(id = R.drawable.estrela),
-                                contentDescription = "estrela"
-                            )
-                            Image(
-                                modifier = Modifier.size(25.dp),
-                                painter = painterResource(id = R.drawable.estrela),
-                                contentDescription = "estrela"
-                            )
-                            Image(
-                                modifier = Modifier.size(25.dp),
-                                painter = painterResource(id = R.drawable.estrela),
-                                contentDescription = "estrela"
-                            )
-                            Image(
-                                modifier = Modifier.size(25.dp),
-                                painter = painterResource(id = R.drawable.anterior),
-                                contentDescription = "estrela na metade"
-                            )
+
+
 
                         }
 
-                        Text(
-                            text = "(130 avaliações)",
-                            fontFamily = poppinsFontFamily,
 
-                            fontWeight = FontWeight.Medium,
-
-                            fontSize = 12.sp,
-                            modifier = Modifier.align(Alignment.CenterHorizontally)
-                        )
 
                     }
+                    Text(
+                        text = "(130 avaliações)",
+                        fontFamily = poppinsFontFamily,
+
+                        fontWeight = FontWeight.Medium,
+
+                        fontSize = 12.sp,
+                        modifier = Modifier.align(Alignment.CenterHorizontally)
+                    )
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
