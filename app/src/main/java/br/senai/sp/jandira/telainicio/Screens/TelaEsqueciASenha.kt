@@ -31,6 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 import org.w3c.dom.Text
 import java.time.format.TextStyle
 
@@ -72,6 +73,7 @@ fun TelaEsqueciASenha() {
                 ) {
                     Text(
                         fontSize = 35.sp,
+                        fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Bold,
                         text = "Esqueceu sua senha? Não se preocupe!",
                     )
@@ -79,7 +81,8 @@ fun TelaEsqueciASenha() {
 
 
                     Text( fontSize = 20.sp,
-                        text = "Informe seu email para que \npossamos enviar a sua senha \ne digite o código recebido"
+                        text = "Informe seu email para que \npossamos enviar a sua senha \ne digite o código recebido",
+                        fontFamily = poppinsFontFamily
                     )
 
 
@@ -120,6 +123,7 @@ fun TelaEsqueciASenha() {
                         ){
                             Text(text = "Enviar e-mail",
                                 color = Color.Black,
+                                fontFamily = poppinsFontFamily,
                                 fontWeight = FontWeight.Bold,
                                 fontSize = 15.sp
                             )
@@ -134,12 +138,14 @@ fun TelaEsqueciASenha() {
                     ){
                         Text(text = "Recuperar senha",
                             color = Color.Black,
+                            fontFamily = poppinsFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 15.sp
                         )
                     }
                     Text(text = "Voltar a tela de login",
                         fontWeight = FontWeight.Medium,
+                        fontFamily = poppinsFontFamily,
                         modifier = Modifier.
                         align(Alignment.CenterHorizontally)
                     )

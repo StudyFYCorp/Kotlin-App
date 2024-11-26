@@ -44,6 +44,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
        Row{
            Text(
                text = "Ranking",
+               fontFamily = poppinsFontFamily,
                fontSize = 20.sp,
                modifier = Modifier
                    .weight(0.2f),
@@ -66,7 +67,8 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
             Text(
                 text = "Seu rank",
                 fontSize = 30.sp,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily,
                 )
 
             Box(
@@ -89,6 +91,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
             Text(text = "Bronze II",
                 fontSize = 20.sp,
                 fontWeight = FontWeight.ExtraBold,
+                fontFamily = poppinsFontFamily,
                 color = Color(0xFFFCDA572)
                 )
 
@@ -97,13 +100,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
             Text(
                 text = "A temporada encerrará daqui a:",
                 fontSize = 15.sp,
-                fontWeight = FontWeight.Medium
+                fontWeight = FontWeight.Medium,
+                fontFamily = poppinsFontFamily
                 )
             Spacer(modifier = Modifier.height(5.dp))
             Text(
                 text = "7 Dias",
                 fontSize = 20.sp,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily
             )
         }
         Spacer(modifier = Modifier.height(20.dp))
@@ -116,7 +121,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
             Box(
                 modifier = Modifier
                     .height(440.dp)
-                    .width(300.dp)
+                    .width(320.dp)
                     .border(BorderStroke(1.dp, Color.Gray))
             ){
                 Column {
@@ -137,6 +142,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                     text = "#5",
                                     textAlign = TextAlign.Center,
                                     fontWeight = FontWeight.Bold,
+                                    fontFamily = poppinsFontFamily
                                 )
                             }
                             Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -151,13 +157,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 )
                                 Text(
                                     text = "grande eweww...",
-                                    fontSize = 15.sp
+                                    fontSize = 15.sp,
+                                    fontFamily = poppinsFontFamily
                                     )
 
                                 Text(
                                     text = "271pts",
-                                    fontWeight = FontWeight.ExtraBold,
-                                    fontSize = 12.sp
+                                    fontWeight = FontWeight.Bold,
+                                    fontSize = 12.sp,
+                                    fontFamily = poppinsFontFamily,
                                 )
                             }
                         }
@@ -178,6 +186,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "subir de nivel",
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 textAlign = TextAlign.Center,
                                 color = Color.Green
                                 )
@@ -199,7 +208,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#6",
                                 textAlign = TextAlign.Center,
                                 fontFamily = poppinsFontFamily,
-                                fontWeight = FontWeight.Thin
+                                fontWeight = FontWeight.ExtraBold
 
                             )
                         }
@@ -215,13 +224,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                     }
@@ -241,6 +252,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#7",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
 
@@ -256,13 +268,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                     }
@@ -283,6 +297,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#8",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -297,13 +312,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                     }
@@ -324,6 +341,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#9",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -338,12 +356,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -365,6 +385,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "descer de nivel",
                                 fontSize = 20.sp,
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 textAlign = TextAlign.Center,
                                 color = Color.Red
                             )
@@ -387,6 +408,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#10",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -402,12 +424,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -425,7 +449,8 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
             Text(
                 text = "Rank de mentores",
                 fontSize = 30.sp,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily
             )
             Box(
                 modifier = Modifier
@@ -442,7 +467,8 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
 
             Text(text = "Mentores que mais ajudam",
                 fontWeight = FontWeight.Bold,
-                fontSize = 15.sp
+                fontSize = 15.sp,
+                fontFamily = poppinsFontFamily
             )
 
             Spacer(modifier = Modifier.height(25.dp))
@@ -484,13 +510,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontFamily = poppinsFontFamily,
+                                fontSize = 12.sp,
                             )
                         }
                     }
@@ -524,13 +552,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily,
                             )
                         }
                     }
@@ -565,12 +595,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 15.sp
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -592,6 +624,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#4",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -606,12 +639,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -633,6 +668,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#5",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -647,12 +683,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "271pts",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -747,12 +785,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 15.sp
                             )
 
                             Text(
                                 text = "4,5",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -787,12 +827,14 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 15.sp
                             )
 
                             Text(
                                 text = "4,2",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 12.sp
                             )
                         }
@@ -828,6 +870,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
+                                fontFamily = poppinsFontFamily,
                                 fontSize = 15.sp
                             )
 
@@ -855,6 +898,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#4",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -869,13 +913,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "3",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                     }
@@ -896,6 +942,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                                 text = "#5",
                                 textAlign = TextAlign.Center,
                                 fontWeight = FontWeight.Bold,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                         Row(horizontalArrangement = Arrangement.spacedBy(20.dp),
@@ -910,13 +957,15 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             )
                             Text(
                                 text = "grande eweww...",
-                                fontSize = 15.sp
+                                fontSize = 15.sp,
+                                fontFamily = poppinsFontFamily,
                             )
 
                             Text(
                                 text = "1",
                                 fontWeight = FontWeight.ExtraBold,
-                                fontSize = 12.sp
+                                fontSize = 12.sp,
+                                fontFamily = poppinsFontFamily
                             )
                         }
                     }
