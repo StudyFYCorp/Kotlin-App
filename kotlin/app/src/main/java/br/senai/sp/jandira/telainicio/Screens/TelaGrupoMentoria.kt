@@ -52,6 +52,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import androidx.navigation.NavHostController
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 
 fun DropdownMenuItem(onClick: () -> Unit, interactionSource: @Composable () -> Unit) {
@@ -96,6 +97,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                     fontSize = 20.sp,
                     color = Color(0xFF302F2F),
                     text = "Grupo de mentoria",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier
                         .align(Alignment.BottomCenter)
                         .padding(bottom = 20.dp)
@@ -153,6 +155,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                     Text(
                         text = "membros 18/30",
                         color = Color.Black,
+                        fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Bold
                     ) // Mudando a cor do texto para branco
                 }
@@ -164,6 +167,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                 ) {
                     Text(
                         text = "Descrição",
+                        fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Bold
                     )
                     Box(
@@ -204,6 +208,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                         Text(
                             "wsdsd sds dewfefnj fnierf uhfhef efeufhuefe \nfheufh  sjds hsdhsjd \njhjfsjf sfhsjhfj h jshf jsh djs\n jh sh jhshd jshdjsh d ",
                             fontSize = 16.sp,
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier.padding(start = 10.dp, top = 10.dp)
                         )
                     }
@@ -222,7 +227,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                     modifier = Modifier.size(24.dp)
                 )
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Mentor do grupo", fontWeight = FontWeight.Bold, fontSize = 15.sp)
+                Text("Mentor do grupo", fontWeight = FontWeight.Bold, fontSize = 15.sp, fontFamily = poppinsFontFamily,)
 
             }
             Spacer(modifier = Modifier.height(10.dp))
@@ -290,6 +295,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                     Box() {
                         Text(
                             text = "Nome do mentor",
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier
                                 .padding(start = 10.dp, top = 10.dp),
                             fontSize = 16.sp,
@@ -297,8 +303,9 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                         )
                         Text(
                             text = ("20 pessoas"),
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier
-                                .padding(top = 24.dp, start = 10.dp),
+                                .padding(top = 25.dp, start = 10.dp),
                             fontSize = 14.sp
                         )
 
@@ -326,15 +333,17 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
                             modifier = Modifier
                                 .padding(top = 20.dp)
                                 .align(Alignment.TopStart),
+                            fontFamily = poppinsFontFamily,
                             fontSize = 16.sp,
                             fontWeight = FontWeight.Bold
                         )
                         Text(
                             "(254 avaliações)",
+                            fontFamily = poppinsFontFamily,
                             modifier = Modifier
                                 .padding(top = 30.dp, start = 50.dp)
                                 .align(Alignment.TopStart),
-                            fontSize = 10.sp
+                            fontSize = 8.sp
                         )
                         Image(
                             painter = painterResource(id = R.drawable.estrelas),
@@ -413,7 +422,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
 
 
                 ) {
-                    Text(text = "MEMBROS", fontWeight = FontWeight.ExtraBold)
+                    Text(text = "MEMBROS", fontWeight = FontWeight.ExtraBold, fontFamily = poppinsFontFamily,)
                 }
 
                 Box(
@@ -470,7 +479,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
 
                     contentAlignment = Alignment.Center
                 ) {
-                    Text(text = "ATIVIDADES", fontWeight = FontWeight.ExtraBold)
+                    Text(text = "ATIVIDADES", fontWeight = FontWeight.ExtraBold, fontFamily = poppinsFontFamily)
                 }
 
                 Box(
@@ -529,7 +538,7 @@ fun TelaGrupoMentoria(controleDeNavegacao: NavHostController? = null) {
 
 
                 ) {
-                    Text(text = "DUVIDA", fontWeight = FontWeight.ExtraBold)
+                    Text(text = "DUVIDA", fontWeight = FontWeight.ExtraBold, fontFamily = poppinsFontFamily,)
                 }
             }
 

@@ -74,7 +74,7 @@ fun SuporteProblema(modifier: Modifier = Modifier) {
         OutlinedTextField(
             value = text,
             onValueChange = { text = it },
-            label = { Text("descreva o problema") },
+            label = { Text("descreva o problema",fontFamily = poppinsFontFamily)},
             colors = TextFieldDefaults.outlinedTextFieldColors(
                 containerColor = Color(0xFFFD9D9D9)
             ),
@@ -85,6 +85,8 @@ fun SuporteProblema(modifier: Modifier = Modifier) {
 
         Text(text = "*Agradescemos pelo seu feedback!",
             color = Color.Red,
+            fontFamily = poppinsFontFamily,
+
             fontSize = 15.sp
             )
 

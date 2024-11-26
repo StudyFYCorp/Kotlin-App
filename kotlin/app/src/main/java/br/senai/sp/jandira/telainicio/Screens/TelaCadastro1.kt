@@ -375,6 +375,7 @@ fun TelaCadastro1(
                         Text(
                             fontSize = 20.sp,
                             fontWeight = FontWeight.Bold,
+                            fontFamily = poppinsFontFamily,
                             color = Color.Black,
                             text = "Data de nascimento"
                         )
@@ -393,18 +394,21 @@ fun TelaCadastro1(
                                     modifier = Modifier
                                         .padding(start = 30.dp)
                                         .width(80.dp),
+                                    fontFamily = poppinsFontFamily,
                                     text = "Dia"
                                 )
                                 Text(
                                     modifier = Modifier
                                         .padding(start = 130.dp)
                                         .width(80.dp),
+                                    fontFamily = poppinsFontFamily,
                                     text = "Mês"
                                 )
                                 Text(
                                     modifier = Modifier
                                         .padding(start = 245.dp)
                                         .width(80.dp),
+                                    fontFamily = poppinsFontFamily,
                                     text = "Ano"
                                 )
                             }
@@ -452,6 +456,7 @@ fun TelaCadastro1(
                                             Icon(
                                                 imageVector = Icons.Filled.KeyboardArrowDown,
                                                 contentDescription = "Expand menu",
+
                                                 tint = Color(0xFFFEE101)
                                             )
                                         },
@@ -517,6 +522,7 @@ fun TelaCadastro1(
                     ) {
                         Text(
                             text = "Prox. passo",
+                            fontFamily = poppinsFontFamily,
                             color = Color.Black,
                             letterSpacing = 1.sp
                         )
@@ -537,6 +543,7 @@ fun TelaCadastro1(
                         text = "Nos diga 2 matérias que queira estudar.",
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
+                        fontFamily = poppinsFontFamily,
                         color = Color.Black
                     )
                     Spacer(modifier = Modifier.height(60.dp))
@@ -561,6 +568,7 @@ fun TelaCadastro1(
                                 )
                                 Text(
                                     text = materia.nome_materia,
+                                    fontFamily = poppinsFontFamily,
                                     modifier = Modifier.padding(start = 8.dp)
                                 )
                             }
@@ -631,7 +639,7 @@ fun TelaCadastro1(
                         colors = ButtonDefaults.buttonColors(Color(0xFFFEE101)),
                         modifier = Modifier.width(200.dp)
                     ) {
-                        Text(text = "Cadastrar", color = Color.Black, letterSpacing = 1.sp)
+                        Text(text = "Cadastrar", color = Color.Black, letterSpacing = 1.sp,   fontFamily = poppinsFontFamily)
                         Icon(
                             imageVector = Icons.Filled.ArrowForward,
                             contentDescription = "",

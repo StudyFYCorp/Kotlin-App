@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.rickandmorty.service.RetrofitFactory
 import br.senai.sp.jandira.telainicio.R
 import br.senai.sp.jandira.telainicio.model.Materia
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -86,6 +87,7 @@ fun CadernoVirtual(modifier: Modifier = Modifier) {
                             .width(40.dp)
                     )
                     Text(text = "Titulo",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 30.sp
                         )
                 }

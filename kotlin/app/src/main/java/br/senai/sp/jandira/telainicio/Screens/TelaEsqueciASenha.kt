@@ -75,7 +75,7 @@ fun TelaEsqueciASenha() {
                         fontSize = 35.sp,
                         fontFamily = poppinsFontFamily,
                         fontWeight = FontWeight.Bold,
-                        text = "Esqueceu sua senha? Não se preocupe!",
+                        text = "Esqueceu sua senha? Não se preocupe!"
                     )
                     Spacer(modifier = Modifier.padding(10.dp))
 
@@ -90,7 +90,7 @@ fun TelaEsqueciASenha() {
                     OutlinedTextField(
                         value = "",
                         onValueChange = { /*TODO*/ },
-                        label = { Text("Informe o E-mail cadastrado") },
+                        label = { Text("Informe o E-mail cadastrado", fontFamily = poppinsFontFamily,) },
                         colors = OutlinedTextFieldDefaults.colors(
                             focusedBorderColor = Color(0xFFFE9CE03), // Cor daborda quando o campo está focado
                             unfocusedBorderColor = Color(0xFFFE9CE03) // Cor da borda quando o campo não está focado
@@ -106,7 +106,7 @@ fun TelaEsqueciASenha() {
                             .height(50.dp),
                             value = "",
                             onValueChange = { /*TODO*/ },
-                            label = { Text(text = "Insira o código aqui") },
+                            label = { Text(text = "Insira o código aqui", fontFamily = poppinsFontFamily,) },
                             colors = OutlinedTextFieldDefaults.colors(
                                 focusedBorderColor = Color(0xFFFE9CE03), // Cor daborda quando o campo está focado
                                 unfocusedBorderColor = Color(0xFFFE9CE03) // Cor da borda quando o campo não está focado

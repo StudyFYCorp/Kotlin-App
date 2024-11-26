@@ -49,6 +49,7 @@ fun TelaMultiplaEscolha() {
                         text = "Qual é a capital do Brasil?",
                         fontSize = 20.sp,
                         fontWeight = FontWeight.Bold,
+                        fontFamily = poppinsFontFamily,
                         color = Color.Black,
                         modifier = Modifier.padding(8.dp) // Padding ao redor do texto
                     )
@@ -86,8 +87,10 @@ fun TelaMultiplaEscolha() {
                 Text(
                     text = option,
                     fontSize = 16.sp,
+                    fontFamily = poppinsFontFamily,
                     color = Color.Black,
                     modifier = Modifier.padding(vertical = 8.dp)
+
                 )
             }
         }
@@ -105,6 +108,7 @@ fun TelaMultiplaEscolha() {
         ) {
             Text(
                 text = "Responder",
+                fontFamily = poppinsFontFamily,
                 fontSize = 16.sp,
                 fontWeight = FontWeight.Bold,
                 color = Color.Black,

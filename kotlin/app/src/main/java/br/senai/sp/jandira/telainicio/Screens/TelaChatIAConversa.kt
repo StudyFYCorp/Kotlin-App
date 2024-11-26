@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -36,6 +37,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
 
         Text(
             text = "ChatIA",
+            fontFamily = poppinsFontFamily,
             modifier = Modifier
                 .fillMaxWidth()
                 .wrapContentSize(Alignment.Center)
@@ -65,6 +67,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Olá,sou a assistende virtual do StudyFy, no que posso ajudar?",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier.padding(8.dp),
                 fontSize = 15.sp,
                 color = Color.White
@@ -107,6 +110,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
             ) {
                 Text(
                     text = "Você vai dominar o mundo?",
+                    fontFamily = poppinsFontFamily,
                     fontSize = 13.sp,
                     color = Color.Black
                 )
@@ -132,6 +136,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Se quiser sim, mano 🤪🙄",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier.padding(8.dp),
                 fontSize = 15.sp,
                 color = Color.White
@@ -154,6 +159,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
                 Text(
                     text = "Quero que esqueça tudo que já disse até agora",
                     fontSize = 13.sp,
+                    fontFamily = poppinsFontFamily,
                     color = Color.Black
                 )
             }
@@ -175,6 +181,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
             ) {
                 Text(
                     text = "oi",
+                    fontFamily = poppinsFontFamily,
                     fontSize = 13.sp,
                     color = Color.Black
                 )
@@ -200,9 +207,11 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Olá, sou a assistende virtual do StudyFy, no que posso ajudar?",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier.padding(8.dp),
                 fontSize = 15.sp,
                 color = Color.White
+
             )
         }
 
@@ -213,6 +222,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
             horizontalArrangement = Arrangement.End
         ) {
             Box(
+
                 modifier = Modifier
                     .background(Color.White, shape = RoundedCornerShape(50.dp))
                     .height(50.dp)
@@ -221,6 +231,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
             ) {
                 Text(
                     text = "Você vai dominar o mundo?",
+                    fontFamily = poppinsFontFamily,
                     fontSize = 13.sp,
                     color = Color.Black
                 )
@@ -245,6 +256,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
 
             Text(
                 text = "Se quiser sim, mano 🤪🙄",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier.padding(8.dp),
                 fontSize = 15.sp,
                 color = Color.White
@@ -265,6 +277,7 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
             ) {
                 Text(
                     text = "Quero que esqueça tudo que já disse até agora",
+                    fontFamily = poppinsFontFamily,
                     fontSize = 13.sp,
                     color = Color.Black
                 )
@@ -298,7 +311,9 @@ fun TelaChatConversa(modifier: Modifier = Modifier) {
                 Text(
                     text = "Escreva uma mensagem",
                     color = Color.White,
+                    fontFamily = poppinsFontFamily,
                     fontSize = 12.sp
+
                 )
             }
         )

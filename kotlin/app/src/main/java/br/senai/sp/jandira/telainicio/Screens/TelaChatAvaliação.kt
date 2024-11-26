@@ -45,6 +45,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.zIndex
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -68,12 +69,14 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                     text = "Sair do Chat",
                     modifier = Modifier
                         .padding(top = 5.dp),
+                    fontFamily = poppinsFontFamily,
                     fontSize = 15.sp,
                     color = Color.White
                 )
                 Spacer(Modifier.weight(0.8f))
                 Text(
                     text = "Chat",
+                    fontFamily = poppinsFontFamily,
                     fontSize = 20.sp,
                     color = Color.White
                 )
@@ -106,6 +109,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "Como posso ajudar?",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -127,6 +131,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Como eu faço soma de três Números?",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -150,6 +155,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "É só você fazer 3+3+3 = 9",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -171,7 +177,8 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Obrigada!! Esclareceu minha dúvida!!",
-                        fontSize = 13.sp,
+                        fontFamily = poppinsFontFamily,
+                        fontSize = 12.sp,
                         color = Color.Black
                     )
                 }
@@ -194,6 +201,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "Não precisa agradecer, precisando é só chamar",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -215,6 +223,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Como eu faço soma de três Números?",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -238,6 +247,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "É só você fazer 3+3+3 = 9",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -259,6 +269,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Obrigada!! Esclareceu minha dúvida!!",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -282,6 +293,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "Não precisa agradecer, precisando é só chamar",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -314,6 +326,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                 placeholder = {
                     Text(
                         text = "Faça uma pergunta",
+                        fontFamily = poppinsFontFamily,
                         color = Color.White,
                         fontSize = 12.sp
                     )
@@ -347,6 +360,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                        "Nós da equipe StudyFy queremos saber como você avaliou essa ajuda!",
                    fontSize = 15.sp,
                    textAlign = TextAlign.Center,
+                   fontFamily = poppinsFontFamily,
                    fontWeight = FontWeight.Bold
                )
                Image(
@@ -367,6 +381,7 @@ fun ChatAvaliacao(modifier: Modifier = Modifier) {
                    Text(
                        text = "Enviar",
                        color = Color.Black,
+                       fontFamily = poppinsFontFamily,
                        textAlign = TextAlign.Center,
                        fontSize = 20.sp,
                        modifier = Modifier.fillMaxWidth()

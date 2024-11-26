@@ -29,6 +29,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @Composable
 fun TeladeAtividade(controleDeNavegacao: NavHostController?= null){
@@ -51,6 +52,7 @@ fun TeladeAtividade(controleDeNavegacao: NavHostController?= null){
                 Text(
                     text = "Matemática 4º - Fund1",
                     fontSize = 20.sp,
+                    fontFamily = poppinsFontFamily
                 )
             }
         }
@@ -64,6 +66,7 @@ fun TeladeAtividade(controleDeNavegacao: NavHostController?= null){
             Text(
                 text = "Assunto 1 - Soma e subtração",
                 fontSize = 20.sp,
+                fontFamily = poppinsFontFamily
             )}
         Column (modifier = Modifier
             .padding(start = 40.dp,top = 40.dp, bottom = 20.dp, end = 40.dp)
@@ -78,6 +81,7 @@ fun TeladeAtividade(controleDeNavegacao: NavHostController?= null){
                 Text(
                     text = "Soma simples",
                     fontWeight = FontWeight.Bold,
+                    fontFamily = poppinsFontFamily,
                     fontSize = 20.sp,
                 )}
 
@@ -140,6 +144,7 @@ fun TeladeAtividade(controleDeNavegacao: NavHostController?= null){
         ) {
             Text(
                 text = "Assunto 2 - Soma e subtração",
+                fontFamily = poppinsFontFamily,
                 fontSize = 20.sp,
             )}
 

@@ -142,6 +142,7 @@ fun DesempenhodoAluno() {
                                     modifier = Modifier
                                         .padding(top = 5.dp),
                                     fontSize = 18.sp,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Pontos"
                                 )
                                 Text(
@@ -192,6 +193,7 @@ fun DesempenhodoAluno() {
                             ) {
                                 Text(
                                     fontSize = 16.sp,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Sem parar!"
                                 )
                                 Text(
@@ -242,6 +244,7 @@ fun DesempenhodoAluno() {
                             ) {
                                 Text(
                                     fontSize = 16.sp,
+                                    fontFamily = poppinsFontFamily,
                                     text = "Atividades feitas"
                                 )
                                 Text(

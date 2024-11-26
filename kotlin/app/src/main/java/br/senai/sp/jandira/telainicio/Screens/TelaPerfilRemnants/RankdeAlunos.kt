@@ -107,6 +107,7 @@ fun RankdeAlunos(){
                                         Text(
                                             modifier = Modifier
                                                 .align(Alignment.Center),
+                                            fontFamily = poppinsFontFamily,
                                             text = "#9",
                                             fontWeight = FontWeight.Bold,
                                             fontSize = 18.sp
@@ -131,6 +132,8 @@ fun RankdeAlunos(){
                                         Text(
                                             modifier = Modifier.padding(top = 20.dp),
                                             text = "grande eweww...",
+                                            fontFamily = poppinsFontFamily,
+
                                             fontSize = 10.sp
                                         )
 
@@ -144,6 +147,8 @@ fun RankdeAlunos(){
                                             .height(12.dp)
                                             .width(37.dp),
                                         text = "271PTS",
+                                        fontFamily = poppinsFontFamily,
+
                                         fontSize = 10.sp
                                     )
                                 }
@@ -174,6 +179,7 @@ fun RankdeAlunos(){
                                         modifier = Modifier
                                             .align(Alignment.Center),
                                         text = "#10",
+                                        fontFamily = poppinsFontFamily,
                                         fontWeight = FontWeight.Bold,
                                         fontSize = 18.sp
                                     )
@@ -198,6 +204,8 @@ fun RankdeAlunos(){
                                     Text(
                                         modifier = Modifier.padding(top = 20.dp),
                                         text = "Silvia Santos",
+                                        fontFamily = poppinsFontFamily,
+
                                         fontSize = 10.sp
                                     )
 
@@ -212,6 +220,8 @@ fun RankdeAlunos(){
                                         .height(12.dp)
                                         .width(37.dp),
                                     text = "219PTS",
+                                    fontFamily = poppinsFontFamily,
+
                                     fontSize = 10.sp
                                 )
                             }
@@ -239,6 +249,7 @@ fun RankdeAlunos(){
                                         modifier = Modifier
                                             .align(Alignment.Center),
                                         text = "#11",
+                                        fontFamily = poppinsFontFamily,
                                         fontWeight = FontWeight.Bold,
                                         fontSize = 18.sp
                                     )
@@ -263,6 +274,7 @@ fun RankdeAlunos(){
                                     Text(
                                         modifier = Modifier.padding(top = 20.dp),
                                         text = "Tom Holland",
+                                        fontFamily = poppinsFontFamily,
                                         fontSize = 10.sp
                                     )
                                 }
@@ -276,6 +288,8 @@ fun RankdeAlunos(){
                                         .height(12.dp)
                                         .width(37.dp),
                                     text = "189PTS",
+                                    fontFamily = poppinsFontFamily,
+
                                     fontSize = 10.sp
                                 )
                             }

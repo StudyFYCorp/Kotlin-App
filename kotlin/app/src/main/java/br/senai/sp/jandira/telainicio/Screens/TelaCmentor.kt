@@ -30,6 +30,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -49,6 +50,7 @@ fun telaChatCMentor(modifier: Modifier = Modifier) {
         ) {
             Text(
                 "Chat",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier
                     .align(alignment = Alignment.CenterHorizontally)
                     .padding(top = 20.dp),
@@ -75,7 +77,8 @@ fun telaChatCMentor(modifier: Modifier = Modifier) {
             Text(
                 "Matheus aceitou seu pedido de ajuda, mande mensagem para começar a conversa",
                 modifier = Modifier
-                    .padding(start = 80.dp),
+                    .padding(start = 50.dp, top = 20.dp),
+                fontFamily = poppinsFontFamily,
                 color = Color.White,
                 fontSize = 15.sp
             )
@@ -112,6 +115,7 @@ fun telaChatCMentor(modifier: Modifier = Modifier) {
                     Text(
                         text = "Escreva uma mensagem",
                         color = Color.White,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 12.sp
                     )
                 }

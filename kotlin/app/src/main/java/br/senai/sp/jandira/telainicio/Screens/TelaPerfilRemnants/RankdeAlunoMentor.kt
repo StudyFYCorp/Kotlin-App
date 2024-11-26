@@ -61,7 +61,7 @@ fun RankdeAlunoMentor() {
 
                     fontSize = 30.sp,
 
-                )
+                    )
             }
             Row(
                 modifier = Modifier
@@ -139,12 +139,14 @@ fun RankdeAlunoMentor() {
                                 .height(20.dp)
                         ) {
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
 
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "5"
                                 )
                             }
@@ -166,12 +168,14 @@ fun RankdeAlunoMentor() {
 
                             }
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
                                     text = "80%",
+                                    fontFamily = poppinsFontFamily,
                                     fontSize = 10.sp
                                 )
                             }
@@ -183,12 +187,14 @@ fun RankdeAlunoMentor() {
                                 .height(20.dp)
                         ) {
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
 
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "4"
                                 )
                             }
@@ -209,7 +215,8 @@ fun RankdeAlunoMentor() {
                                 )
                             }
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
                                 Text(
@@ -227,12 +234,14 @@ fun RankdeAlunoMentor() {
                                 .height(20.dp)
                         ) {
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
 
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "3"
                                 )
                             }
@@ -253,12 +262,14 @@ fun RankdeAlunoMentor() {
                                 )
                             }
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
                                     text = "35%",
+                                    fontFamily = poppinsFontFamily,
                                     fontSize = 10.sp
                                 )
                             }
@@ -271,12 +282,14 @@ fun RankdeAlunoMentor() {
                                 .height(20.dp)
                         ) {
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
 
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "2"
                                 )
                             }
@@ -297,11 +310,13 @@ fun RankdeAlunoMentor() {
                                 )
                             }
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "10%",
                                     fontSize = 10.sp
                                 )
@@ -315,12 +330,14 @@ fun RankdeAlunoMentor() {
                                 .height(20.dp)
                         ) {
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
 
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "1"
                                 )
                             }
@@ -333,11 +350,13 @@ fun RankdeAlunoMentor() {
                                     .width(100.dp)
                             )
                             Box(
-                                modifier = Modifier.width(25.dp)
+                                modifier = Modifier
+                                    .width(25.dp)
                                     .fillMaxHeight()
                             ) {
                                 Text(
                                     modifier = Modifier.align(Alignment.Center),
+                                    fontFamily = poppinsFontFamily,
                                     text = "0%",
                                     fontSize = 10.sp
                                 )
@@ -420,6 +439,7 @@ fun RankdeAlunoMentor() {
                                                 //NOME VINDO DO BANCO
                                                 Text(
                                                     modifier = Modifier.padding(top = 10.dp),
+                                                    fontFamily = poppinsFontFamily,
                                                     text = "grande eweww...",
                                                     fontSize = 10.sp
                                                 )
@@ -465,6 +485,7 @@ fun RankdeAlunoMentor() {
                                             Text(
                                                 modifier = Modifier
                                                     .align(Alignment.Center),
+                                                fontFamily = poppinsFontFamily,
                                                 text = "#10",
                                                 fontWeight = FontWeight.Bold,
                                                 fontSize = 12.sp
@@ -492,6 +513,7 @@ fun RankdeAlunoMentor() {
                                             Text(
                                                 modifier = Modifier
                                                     .padding(top = 10.dp),
+                                                fontFamily = poppinsFontFamily,
                                                 text = "Silvia Santos",
                                                 fontSize = 10.sp
                                             )
@@ -505,6 +527,7 @@ fun RankdeAlunoMentor() {
                                                 .height(12.dp)
                                                 .width(37.dp),
                                             text = "150",
+                                            fontFamily = poppinsFontFamily,
                                             fontWeight = FontWeight.Bold,
                                             fontSize = 10.sp
                                         )
@@ -535,6 +558,7 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .align(Alignment.Center),
                                                 text = "#11",
+                                                fontFamily = poppinsFontFamily,
                                                 fontWeight = FontWeight.Bold,
                                                 fontSize = 12.sp
                                             )
@@ -561,6 +585,7 @@ fun RankdeAlunoMentor() {
                                             Text(
                                                 modifier = Modifier.padding(top = 10.dp),
                                                 text = "Tom Holland",
+                                                fontFamily = poppinsFontFamily,
                                                 fontSize = 10.sp
                                             )
                                         }
@@ -572,6 +597,7 @@ fun RankdeAlunoMentor() {
                                                 .height(12.dp)
                                                 .width(37.dp),
                                             text = "132",
+                                            fontFamily = poppinsFontFamily,
                                             fontWeight = FontWeight.Bold,
                                             fontSize = 10.sp
                                         )
@@ -594,7 +620,7 @@ fun RankdeAlunoMentor() {
                     ) {
                         Text(
                             //NUMERO DE ESTRELAS  VINDO DO BANCO
-                            text = "4.5 estrelas",
+                            text = "4.5 estrelas", fontFamily = poppinsFontFamily,
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier.align(Alignment.CenterHorizontally)
                         )
@@ -629,6 +655,7 @@ fun RankdeAlunoMentor() {
                                                 Text(
                                                     modifier = Modifier
                                                         .align(Alignment.Center),
+                                                    fontFamily = poppinsFontFamily,
                                                     text = "#9",
                                                     fontWeight = FontWeight.Bold,
                                                     fontSize = 12.sp
@@ -654,7 +681,8 @@ fun RankdeAlunoMentor() {
                                                 //NOME VINDO DO BANCO
                                                 Text(
                                                     modifier = Modifier.padding(top = 10.dp),
-                                                    text = "grande eweww...",
+                                                    text = "grande eweww",
+                                                    fontFamily = poppinsFontFamily,
                                                     fontSize = 10.sp
                                                 )
 
@@ -666,6 +694,7 @@ fun RankdeAlunoMentor() {
                                                     modifier = Modifier
                                                         .height(10.dp)
                                                         .width(20.dp),
+                                                    fontFamily = poppinsFontFamily,
                                                     text = "4.6",
                                                     fontSize = 10.sp
                                                 )
@@ -681,6 +710,7 @@ fun RankdeAlunoMentor() {
                                                     modifier = Modifier
                                                         .height(10.dp)
                                                         .width(20.dp),
+                                                    fontFamily = poppinsFontFamily,
                                                     text = "89",
                                                     fontSize = 10.sp
                                                 )
@@ -718,6 +748,7 @@ fun RankdeAlunoMentor() {
                                                     .align(Alignment.Center),
                                                 text = "#10",
                                                 fontWeight = FontWeight.Bold,
+                                                fontFamily = poppinsFontFamily,
                                                 fontSize = 12.sp
                                             )
                                         }
@@ -744,6 +775,7 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .padding(top = 10.dp),
                                                 text = "Silvia Santos",
+                                                fontFamily = poppinsFontFamily,
                                                 fontSize = 10.sp
                                             )
 
@@ -755,6 +787,8 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .height(10.dp)
                                                     .width(20.dp),
+                                                fontFamily = poppinsFontFamily,
+
                                                 text = "4.5",
                                                 fontSize = 10.sp
                                             )
@@ -770,6 +804,8 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .height(10.dp)
                                                     .width(40.dp),
+                                                fontFamily = poppinsFontFamily,
+
                                                 text = "130",
                                                 fontSize = 10.sp
                                             )
@@ -799,6 +835,8 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .align(Alignment.Center),
                                                 text = "#11",
+                                                fontFamily = poppinsFontFamily,
+
                                                 fontWeight = FontWeight.Bold,
                                                 fontSize = 12.sp
                                             )
@@ -825,6 +863,8 @@ fun RankdeAlunoMentor() {
                                             Text(
                                                 modifier = Modifier.padding(top = 10.dp),
                                                 text = "Tom Holland",
+                                                fontFamily = poppinsFontFamily,
+
                                                 fontSize = 10.sp
                                             )
                                         }
@@ -837,6 +877,8 @@ fun RankdeAlunoMentor() {
                                                     .height(10.dp)
                                                     .width(20.dp),
                                                 text = "4.5",
+                                                fontFamily = poppinsFontFamily,
+
                                                 fontSize = 10.sp
                                             )
 
@@ -851,7 +893,10 @@ fun RankdeAlunoMentor() {
                                                 modifier = Modifier
                                                     .height(10.dp)
                                                     .width(40.dp),
+                                                fontFamily = poppinsFontFamily,
+
                                                 text = "114",
+
                                                 fontSize = 10.sp
                                             )
                                         }
@@ -866,9 +911,8 @@ fun RankdeAlunoMentor() {
     }
 }
 
-
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun RankdeAlunoMentorPreview() {
-    RankdeAlunoMentor()
+   RankdeAlunoMentor()
 }

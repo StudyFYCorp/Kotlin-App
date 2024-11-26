@@ -102,8 +102,8 @@ fun BlocoCadernoVirtual(modifier: Modifier = Modifier) {
         ){
             Column {
                 Box(){
-                    Text(text = "blablablablabla")
-                    Text(text = "21 de mar.")
+                    Text(text = "blablablablabla", modifier = Modifier.padding(15.dp),fontFamily = poppinsFontFamily )
+                    Text(text = "21 de mar.", modifier = Modifier.padding(30.dp), fontFamily = poppinsFontFamily)
                 }
             }
         }

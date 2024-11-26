@@ -37,6 +37,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -60,6 +61,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                     text = "Sair do Chat",
                     modifier = Modifier
                         .padding(top = 5.dp),
+                    fontFamily = poppinsFontFamily,
                     fontSize = 15.sp,
                     color = Color.White
                 )
@@ -67,6 +69,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 Text(
                     text = "Chat",
                     fontSize = 20.sp,
+                    fontFamily = poppinsFontFamily,
                     color = Color.White
                 )
                 Spacer(Modifier.weight(1f))
@@ -98,6 +101,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "Como posso ajudar?",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -119,6 +123,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Como eu faço soma de três Números?",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -142,6 +147,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "É só você fazer 3+3+3 = 9",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -163,6 +169,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Obrigada!! Esclareceu minha dúvida!!",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -187,6 +194,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 Text(
                     text = "Não precisa agradecer, precisando é só chamar",
                     modifier = Modifier.padding(8.dp),
+                    fontFamily = poppinsFontFamily,
                     fontSize = 15.sp,
                     color = Color.White
                 )
@@ -207,6 +215,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Como eu faço soma de três Números?",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -231,6 +240,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 Text(
                     text = "É só você fazer 3+3+3 = 9",
                     modifier = Modifier.padding(8.dp),
+                    fontFamily = poppinsFontFamily,
                     fontSize = 15.sp,
                     color = Color.White
                 )
@@ -251,6 +261,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                 ) {
                     Text(
                         text = "Obrigada!! Esclareceu minha dúvida!!",
+                        fontFamily = poppinsFontFamily,
                         fontSize = 13.sp,
                         color = Color.Black
                     )
@@ -274,6 +285,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
 
                 Text(
                     text = "Não precisa agradecer, precisando é só chamar",
+                    fontFamily = poppinsFontFamily,
                     modifier = Modifier.padding(8.dp),
                     fontSize = 15.sp,
                     color = Color.White
@@ -307,6 +319,7 @@ fun ChatConversa(modifier: Modifier = Modifier) {
                     Text(
                         text = "Faça uma pergunta",
                         color = Color.White,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 12.sp
                     )
                 }

@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowForward
@@ -25,6 +26,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -43,6 +45,7 @@ fun chatMentorPrev(modifier: Modifier = Modifier) {
         ) {
             Text(
                 "Chat",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier
                     .align(alignment = Alignment.CenterHorizontally),
                 fontSize = 20.sp,
@@ -56,10 +59,9 @@ fun chatMentorPrev(modifier: Modifier = Modifier) {
                 .background(Color(0xff302F2F))
                 .align(alignment = Alignment.CenterHorizontally)
         ) {
+
             Text(
-                "Converse com nosso\n" +
-                        "calabreso para " +
-                        "tirar dúvidas superficiais",
+                "Aguardando algum mentor\naceitar seu pedido de ajuda",
                 color = Color.White,
                 fontSize = 20.sp,
                 textAlign = TextAlign.Center
@@ -69,7 +71,8 @@ fun chatMentorPrev(modifier: Modifier = Modifier) {
             contentAlignment = Alignment.Center,
             modifier = Modifier
                 .background(Color(0xff302F2F))
-                .padding(top = 200.dp)
+                .padding(top = 200.dp, start = 20.dp)
+                .width(350.dp)
         ) {
             OutlinedTextField(
                 trailingIcon = {
@@ -94,6 +97,7 @@ fun chatMentorPrev(modifier: Modifier = Modifier) {
                     Text(
                         text = "Escreva uma mensagem",
                         color = Color.White,
+                        fontFamily = poppinsFontFamily,
                         fontSize = 12.sp
                     )
                 }

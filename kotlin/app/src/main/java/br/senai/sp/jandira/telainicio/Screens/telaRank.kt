@@ -744,6 +744,7 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
 
             Text(text = "Mentores com melhores avaliações",
                 fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily,
                 fontSize = 15.sp
             )
 
@@ -877,6 +878,8 @@ fun TelaRankeamento(modifier: Modifier = Modifier) {
                             Text(
                                 text = "4,1",
                                 fontWeight = FontWeight.ExtraBold,
+                                fontFamily = poppinsFontFamily,
+
                                 fontSize = 12.sp
                             )
                         }

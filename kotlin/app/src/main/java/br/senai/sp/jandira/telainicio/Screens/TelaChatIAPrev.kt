@@ -31,6 +31,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -56,6 +57,7 @@ fun TelaChatIA(modifier: Modifier = Modifier) {
                     .align(alignment = Alignment.CenterHorizontally)
                     .padding(top = 20.dp),
                 fontSize = 20.sp,
+                fontFamily = poppinsFontFamily,
                 color = Color.White
             )
         }
@@ -74,7 +76,9 @@ fun TelaChatIA(modifier: Modifier = Modifier) {
             Text(
                 "Converse com nosso\n" +
                         "calabreso para " +
-                        "tirar dúvidas superficiais", modifier = Modifier
+                        "tirar dúvidas superficiais",
+                fontFamily = poppinsFontFamily,
+                modifier = Modifier
                     .padding(start = 80.dp),
                 color = Color.White,
                 fontSize = 20.sp
@@ -108,6 +112,7 @@ fun TelaChatIA(modifier: Modifier = Modifier) {
                 ),
                 placeholder = {
                     Text(
+                        fontFamily = poppinsFontFamily,
                         text = "Escreva uma mensagem",
                         color = Color.White,
                         fontSize = 12.sp

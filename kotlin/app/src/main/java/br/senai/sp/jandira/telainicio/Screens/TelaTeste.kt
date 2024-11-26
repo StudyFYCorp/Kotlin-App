@@ -44,6 +44,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 import org.w3c.dom.Text
 import kotlin.math.roundToInt
 
@@ -124,12 +125,15 @@ fun TelaTeste(modifier: Modifier = Modifier) {
 Column {
     Text(
         text = "Selecione um tipo de  ",
+        fontFamily = poppinsFontFamily,
+
         modifier = Modifier
             .padding(top = 60.dp, start = 70.dp),
         fontSize = 22.sp
     )
     Text(
         text = "atividade para cria-la",
+        fontFamily = poppinsFontFamily,
         modifier = Modifier
             .padding(start = 70.dp),
         fontSize = 22.sp
@@ -190,7 +194,8 @@ Column {
                         .width(20.dp),
                 )
                 Text(
-                    text = "Múltipla\nescolha", modifier = Modifier.padding(start = 25.dp, top = 60.dp))
+                    text = "Múltipla\nescolha", modifier = Modifier.padding(start = 25.dp, top = 60.dp),fontFamily = poppinsFontFamily,
+                )
 
             }
             Spacer(modifier = Modifier.width(10.dp))

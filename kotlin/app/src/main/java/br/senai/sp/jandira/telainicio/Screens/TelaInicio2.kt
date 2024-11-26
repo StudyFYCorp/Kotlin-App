@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import br.senai.sp.jandira.telainicio.R
+import br.senai.sp.jandira.telainicio.ui.theme.poppinsFontFamily
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -53,6 +54,7 @@ fun TelaInicio2(controleDeNavegacao: NavHostController? = null) {
                 contentDescription = "Mascote")
             Text(
                 text = "StudyFy",
+                fontFamily = poppinsFontFamily,
                 modifier = Modifier
                     .offset(y = 200.dp)
                     .align(alignment = Alignment.Center),
@@ -66,10 +68,11 @@ fun TelaInicio2(controleDeNavegacao: NavHostController? = null) {
         }
         Text(
             text ="     Antes de começar seu cadastro, \nprecisamos saber se você é aluno ou professor.",
+            fontFamily = poppinsFontFamily,
             modifier = Modifier
                 .offset(y = 80.dp, x = 30.dp)
                 .align(alignment = Alignment.CenterHorizontally),
-            fontSize = 20.sp,
+            fontSize = 18.sp,
             fontWeight = FontWeight.SemiBold)
 
 
@@ -84,6 +87,7 @@ fun TelaInicio2(controleDeNavegacao: NavHostController? = null) {
     ){
         Text(
             text = "Você é aluno ou professor?",
+            fontFamily = poppinsFontFamily,
             modifier = Modifier
                 .align(Alignment.Center)
                 .offset(y=500.dp),
@@ -104,6 +108,7 @@ fun TelaInicio2(controleDeNavegacao: NavHostController? = null) {
                 text = "Professor",
                 color = Color.Black,
                 fontWeight = FontWeight.Bold,
+                fontFamily = poppinsFontFamily,
                 fontSize = 20.sp,
                 letterSpacing = 1.sp
             )
@@ -124,6 +129,7 @@ fun TelaInicio2(controleDeNavegacao: NavHostController? = null) {
         ) {
             Text(
                 text = "Aluno",
+                fontFamily = poppinsFontFamily,
                 color = Color.Black,
                 fontWeight = FontWeight.Bold,
                 fontSize = 20.sp,
